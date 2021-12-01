@@ -90,17 +90,15 @@
       </div>
     </section>
     <section class="about-us">
-      <div class="about-us__wrapper">
-        <h2 class="about-us__title">Коротко о нас:</h2>
-        <ul class="about-us__list">
-          <li class="about-us__item">Скандинавский стиль по российской цене</li>
-          <li class="about-us__item">Экологически чистые материалы</li>
-          <li class="about-us__item">Увеличивает лайки на фотографиях</li>
-          <li class="about-us__item">Связано вручную с любовью и умилением</li>
-          <li class="about-us__item">Поддержка отечественного производителя</li>
-          <li class="about-us__item">Поставляется в подарочной упаковке</li>
-        </ul>
-      </div>
+      <h2 class="about-us__title">Коротко о нас:</h2>
+      <ul class="about-us__list">
+        <li class="about-us__item">Скандинавский стиль по российской цене</li>
+        <li class="about-us__item">Экологически чистые материалы</li>
+        <li class="about-us__item">Увеличивает лайки на фотографиях</li>
+        <li class="about-us__item">Связано вручную с любовью и умилением</li>
+        <li class="about-us__item">Поддержка отечественного производителя</li>
+        <li class="about-us__item">Поставляется в подарочной упаковке</li>
+      </ul>
     </section>
     <section class="review">
       <div class="review__wrapper slider">
@@ -113,7 +111,7 @@
               сразу
               стали более стильными, а также набирают больше лайков!
             </p>
-            <cite class="review__author-info">Анастасия Красильникова<br>@misssssiskras</cite>
+            <cite class="review__author-info">Анастасия Красильникова<span>@misssssiskras</span></cite>
           </blockquote>
         </div>
         <div class="review__button slider__buttons">
@@ -139,7 +137,7 @@
           <img class="map" src="./img/map-mobile.png" width="320" height="455"
             alt="Карта с указателем местонахождения магазина">
         </div>
-        <button class="button" type="button">напишите нам</button>
+        <a class="contacts__button button" type="button">напишите нам</a>
       </div>
     </section>
   </main>
@@ -172,25 +170,25 @@
       </div>
     </div>
   </footer>
-  <div class="modal-container">
-    <h2 class="modal-title">Добавить в корзину</h2>
-    <p class="modal-text">Выберите размер:</p>
-    <form action="https://echo.htmlacademy.ru/" method="post">
-      <label class="control">
-        <input class="visually-hidden control-input" type="radio" name="size" value="smoll" checked>
-        <span class="control-mark">S</span>
+  <section class="modal-container">
+    <h2 class="modal-container__title">Добавить в корзину</h2>
+    <span class="modal-container__text">Выберите размер:</span>
+    <form class="modal-container__form" action="https://echo.htmlacademy.ru/" method="post">
+      <label class="modal-container__control">
+        <input class="visually-hidden modal-container__control-input" type="radio" name="size" value="smoll" checked>
+        <span class="modal-container__control-mark">s</span>
       </label>
-      <label class="control">
-        <input class="visually-hidden control-input" type="radio" name="size" value="medium">
-        <span class="control-mark">M</span>
+      <label class="modal-container__control">
+        <input class="visually-hidden modal-container__control-input" type="radio" name="size" value="medium">
+        <span class="modal-container__control-mark">m</span>
       </label>
-      <label class="control">
-        <input class="visually-hidden control-input" type="radio" name="size" value="large">
-        <span class="control-mark">L</span>
+      <label class="modal-container__control">
+        <input class="visually-hidden modal-container__control-input" type="radio" name="size" value="large">
+        <span class="modal-container__control-mark">l</span>
       </label>
-      <button class="button" type="submit">Добавить</button>
+      <button class="modal-container__button button" type="submit">добавить</button>
     </form>
-  </div>
+  </section>
 </body>
 
 </html>
