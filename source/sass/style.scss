@@ -1,5 +1,13 @@
 @import "./fonts/fonts.scss";
 @import "./global/global.scss";
-@import "./variablese/variablese.scss";
-@import "./blocks/page.scss";
-@import "./blocks/page-body.scss";
+@import "./global/variablese.scss";
+@import "./components/page.scss";
+@import "./components/page-body.scss";
+@import "./components/page-header.scss";
+@import "./components/lead.scss";
+@import "./components/promo.scss";
+@import "./components/about-us.scss";
+@import "./components/review.scss";
+@import "./components/contacts.scss";
+@import "./components/page-footer.scss";
+@import "./components/modal-container.scss";

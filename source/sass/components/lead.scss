@@ -1,0 +1,16 @@
+.lead {
+  min-width: 320px;
+  background-color: #ffffff;
+  background-image: url("../../img/hero-mobile.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  outline: 1px solid green;
+}
+
+.lead__wrapper {
+  width: 320px;
+  height: 310px;
+  margin: 0 auto;
+  padding: 1px 30px;
+  box-sizing: border-box;
+}
