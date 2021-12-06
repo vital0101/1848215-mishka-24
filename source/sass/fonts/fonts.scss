@@ -2,16 +2,16 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url("/source/fonts/opensans.woff2") format("woff2"),
        url("/source/fonts/opensans.woff") format("woff");
-  font-display: swap;
 }
 
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: url("/source/fonts/opensansbold.woff2") format("woff2"),
        url("/source/fonts/opensansbold.woff") format("woff");
-  font-display: swap;
 }
