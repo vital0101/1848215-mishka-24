@@ -1,3 +1,5 @@
-@import url("/source/sass/fonts/fonts.scss");
-@import url("/source/sass/blocks/page.scss");
-@import url("/source/sass/blocks/page-body.scss");
+@import "./fonts/fonts.scss";
+@import "./global/global.scss";
+@import "./variablese/variablese.scss";
+@import "./blocks/page.scss";
+@import "./blocks/page-body.scss";
