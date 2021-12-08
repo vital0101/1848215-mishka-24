@@ -1,4 +1,26 @@
 .modal-container {
   padding: 1px 30px;
-  outline: 1px solid green;
+  outline: 1px solid #008000;
+}
+
+.modal-container__title {
+  font-size: 25px;
+  line-height: 30px;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.modal-container__text {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $charcoal;
+}
+
+.modal-container__button {
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $downy;
 }

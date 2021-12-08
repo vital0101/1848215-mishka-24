@@ -1,8 +1,14 @@
 .page-footer {
   background-color: #f1f1f1;
-  outline: 1px solid green;
+  outline: 1px solid #008000;
 }
 
 .page-footer__wrapper {
   padding: 25px 30px 20px;
+}
+
+.page-footer__copyright-text {
+  font-size: 19px;
+  line-height: 18px;
+  color: $black;
 }

@@ -1,7 +1,19 @@
 .about-us {
-  outline: 1px solid green;
+  outline: 1px solid #008000;
 }
 
 .about-us__wrapper {
   padding: 1px 30px;
+}
+
+.about-us__title {
+  font-size: 25px;
+  line-height: 30px;
+  color: $black;
+}
+
+.about-us__list {
+  font-size: 17px;
+  line-height: 20px;
+  color: $black;
 }
