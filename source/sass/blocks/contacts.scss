@@ -1,5 +1,5 @@
 .contacts {
-  outline: 1px solid $green;
+  outline: 1px solid $color-green;
 }
 
 .contacts__wrapper {
@@ -9,14 +9,14 @@
 .contacts__title {
   font-size: 25px;
   line-height: 30px;
-  color: $black;
+  color: $color-black;
 }
 
 .contacts__list {
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
-  color: $charcoal;
+  color: $color-charcoal;
 
   a {
     text-decoration: none;
@@ -26,7 +26,7 @@
 .contacts__button {
   font-size: 18px;
   line-height: 20px;
-  color: $charcoal;
+  color: $color-charcoal;
   text-transform: uppercase;
   text-decoration: none;
 }

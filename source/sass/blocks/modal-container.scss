@@ -1,12 +1,12 @@
 .modal-container {
   padding: 1px 30px;
-  outline: 1px solid #008000;
+  outline: 1px solid $color-green;
 }
 
 .modal-container__title {
   font-size: 25px;
   line-height: 30px;
-  color: $black;
+  color: $color-black;
   text-transform: uppercase;
 }
 
@@ -14,13 +14,13 @@
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
-  color: $charcoal;
+  color: $color-charcoal;
 }
 
 .modal-container__button {
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
-  color: $white;
-  background-color: $downy;
+  color: $color-white;
+  background-color: $color-downy;
 }

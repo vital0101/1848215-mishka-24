@@ -1,38 +1,38 @@
 .form-order {
   padding: 1px 30px;
-  outline: 1px solid #008000;
+  outline: 1px solid $color-green;
 }
 
 .form__discription {
   font-size: 13px;
   line-height: 24px;
   font-weight: normal;
-  color: $charcoal;
+  color: $color-charcoal;
 }
 
 .form__title {
   line-height: 16px;
   font-size: 17px;
   text-transform: uppercase;
-  color: $downy;
+  color: $color-downy;
 }
 
 .form__radio-list {
   font-size: 17px;
   line-height: 18px;
-  color: $black;
+  color: $color-black;
 }
 
 .form__legend {
   font-size: 14px;
   line-height: 16px;
   font-weight: normal;
-  color: $charcoal;
+  color: $color-charcoal;
 }
 
 .form__button-submit {
   line-height: 16px;
   font-size: 17px;
-  color: $charcoal;
+  color: $color-charcoal;
   text-transform: uppercase;
 }

@@ -1,6 +1,6 @@
 .page-footer {
-  background-color: #f1f1f1;
-  outline: 1px solid #008000;
+  background-color: $color-white-smoke;
+  outline: 1px solid $color-green;
 }
 
 .page-footer__wrapper {
@@ -10,5 +10,5 @@
 .page-footer__copyright-text {
   font-size: 19px;
   line-height: 18px;
-  color: $black;
+  color: $color-black;
 }

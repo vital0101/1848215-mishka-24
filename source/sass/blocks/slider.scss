@@ -1,35 +1,33 @@
 .slider__title {
   font-size: 25px;
   line-height: 30px;
-  color: $black;
+  color: $color-black;
 }
 
 .slider__text {
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
-  color: $charcoal;
+  color: $color-charcoal;
 }
 
 .slider__author-info {
   font-size: 17px;
   line-height: 24px;
-  color: $black;
+  color: $color-black;
 
   span {
     font-size: 17px;
     line-height: 30px;
     font-weight: 400;
-    color: $charcoal;
+    color: $color-charcoal;
   }
 }
 
 .slider__button {
   font-size: 18px;
   line-height: 20px;
-  color: $charcoal;
+  color: $color-charcoal;
   text-transform: uppercase;
   text-decoration: none;
 }
-
-

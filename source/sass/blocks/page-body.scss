@@ -5,9 +5,9 @@
   width: 320px;
   min-height: 100%;
 
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: $font-family-open-sans;
   font-style: normal;
   font-weight: 700;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: $color-white;
+  color: $color-black;
 }

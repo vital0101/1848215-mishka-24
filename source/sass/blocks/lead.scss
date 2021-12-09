@@ -1,8 +1,8 @@
 .lead {
   // min-width: 320px;
-  background-color: #f1f1f1;
+  background-color: $color-white-smoke;
 
-  outline: 1px solid #008000;
+  outline: 1px solid $color-green;
 
   &--background-image {
     background-image: url("../../img/hero-mobile.png");
@@ -31,18 +31,18 @@
   font-size: 19px;
   line-height: 24px;
   text-decoration: none;
-  color: #ffffff;
-  background-color: #63d1bb;
+  color: $color-white;
+  background-color: $color-downy;
 }
 
 .lead__title-catalog {
   line-height: 30px;
   font-size: 27px;
-  color: $black;
+  color: $color-black;
 }
 
 .lead__title-order {
   line-height: 30px;
   font-size: 27px;
-  color: $black;
+  color: $color-black;
 }
