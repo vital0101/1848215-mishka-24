@@ -5,7 +5,7 @@
   outline: 1px solid $color-green;
 
   &--background-image {
-    background-image: url("../../img/hero-mobile.png");
+    background-image: url("../img/hero-mobile.png");
     background-repeat: no-repeat;
     background-position: top;
   }
@@ -36,6 +36,7 @@
 }
 
 .lead__title-catalog {
+  margin: 0;
   line-height: 30px;
   font-size: 27px;
   color: $color-black;

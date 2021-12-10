@@ -3,19 +3,12 @@
   outline: 1px solid $color-green;
 }
 
-.card {
-  a {
-    text-decoration: none;
-  }
-}
-
 .card__title {
   line-height: 24px;
-  font-size: 17px;
-  color: $color-black;
 }
 
 .card__discription {
+  display: block;
   font-size: 13px;
   line-height: 30px;
   font-weight: 400;
@@ -25,5 +18,4 @@
 .card__price {
   font-size: 15px;
   line-height: 24px;
-  color: $color-black;
 }

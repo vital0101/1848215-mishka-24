@@ -1,9 +1,10 @@
 .promo {
+  padding-bottom: 39px;
   outline: 1px solid $color-green;
 }
 
 .promo__wrapper {
-  padding: 1px 30px;
+  padding: 0 30px;
 }
 
 .promo__title {
@@ -14,7 +15,6 @@
 
 .promo__label {
   line-height: 20px;
-  font-size: 17px;
   text-transform: uppercase;
   color: $color-downy;
   margin: 0;
@@ -28,10 +28,19 @@
 }
 
 .promo__list {
+  display: flex;
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
   color: $color-charcoal;
+}
+
+.promo__item {
+  width: 97px;
+}
+
+.promo__discription {
+  margin: 0;
 }
 
 .promo__price {
@@ -41,6 +50,7 @@
 }
 
 .promo__button {
+  display: block;
   line-height: 18px;
   font-size: 20px;
   color: $color-charcoal;

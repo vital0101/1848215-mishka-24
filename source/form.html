@@ -78,17 +78,15 @@
           <h3 class="form__title">тип</h3>
           <ul class="form__radio-list">
             <li class="form__radio-item">
-              <label class="control">
-                <input class="control__input-radio" type="radio" name="choiсe" value="accessory" checked>
-                <span class="control__mark"></span>
-                <span class="control__label">Аксессуар для интерьера</span>
+              <label class="form__control">
+                <input class="form__input-radio" type="radio" name="choiсe" value="accessory" checked>
+                <span class="form__label">Аксессуар для интерьера</span>
               </label>
             </li>
             <li class="form__radio-item">
-              <label class="control">
-                <input class="control__input-radio" type="radio" name="choiсe" value="toy">
-                <span class="control__mark"></span>
-                <span class="control__label">Детская игрушка</span>
+              <label class="form__control">
+                <input class="form__input-radio" type="radio" name="choiсe" value="toy">
+                <span class="form__label">Детская игрушка</span>
               </label>
             </li>
           </ul>
@@ -98,39 +96,39 @@
           <h3 class="form__title">цвет</h3>
           <ul class="form__checkbox-list">
             <li class="form__checkbox-item">
-              <label class="control">
-                <input class="control__input-checkbox" type="checkbox" name="colors" value="white" checked>
-                <span class="control__label">Белый</span>
+              <label class="form__control">
+                <input class="form__input-checkbox" type="checkbox" name="colors" value="white" checked>
+                <span class="form__label">Белый</span>
               </label>
             </li>
             <li class="form__checkbox-item">
-              <label class="control">
-                <input class="control__input-checkbox" type="checkbox" name="colors" value="grey" checked>
-                <span class="control__label">Серый</span>
+              <label class="form__control">
+                <input class="form__input-checkbox" type="checkbox" name="colors" value="grey" checked>
+                <span class="form__label">Серый</span>
               </label>
             </li>
             <li class="form__checkbox-item">
-              <label class="control">
-                <input class="control__input-checkbox" type="checkbox" name="colors" value="tiffany">
-                <span class="control__label">Тиффани</span>
+              <label class="form__control">
+                <input class="form__input-checkbox" type="checkbox" name="colors" value="tiffany">
+                <span class="form__label">Тиффани</span>
               </label>
             </li>
             <li class="form__checkbox-item">
-              <label class="control">
-                <input class="control__input-checkbox" type="checkbox" name="colors" value="black">
-                <span class="control__label">Черный</span>
+              <label class="form__control">
+                <input class="form__input-checkbox" type="checkbox" name="colors" value="black">
+                <span class="form__label">Черный</span>
               </label>
             </li>
             <li class="form__checkbox-item">
-              <label class="control">
-                <input class="control__input-checkbox" type="checkbox" name="colors" value="pink">
-                <span class="control__label">Розовый</span>
+              <label class="form__control">
+                <input class="form__input-checkbox" type="checkbox" name="colors" value="pink">
+                <span class="form__label">Розовый</span>
               </label>
             </li>
             <li class="form__checkbox-item">
-              <label class="control">
-                <input class="control__input-checkbox" type="checkbox" name="colors" value="orange">
-                <span class="control__label">Оранжевый</span>
+              <label class="form__control">
+                <input class="form__input-checkbox" type="checkbox" name="colors" value="orange">
+                <span class="form__label">Оранжевый</span>
               </label>
             </li>
           </ul>
@@ -138,19 +136,19 @@
 
         <div class="form__initials">
           <h3 class="form__title">фио</h3>
-          <label class="control">
-            <span class="control__text-name">Имя:</span>
-            <input class="control__input-name" type="text" name="user-name" placeholder="Введите ваше имя*">
+          <label class="form__control">
+            <span class="form__text-name">Имя:</span>
+            <input class="form__input-name" type="text" name="user-name" placeholder="Введите ваше имя*">
           </label>
 
-          <label class="control">
-            <span class="control__text-surname">Фамилия:</span>
-            <input class="control__input-surname" type="text" name="user-surname" placeholder="Укажите фамилию*">
+          <label class="form__control">
+            <span class="form__text-surname">Фамилия:</span>
+            <input class="form__input-surname" type="text" name="user-surname" placeholder="Укажите фамилию*">
           </label>
 
-          <label class="control">
-            <span class="control__text-patronymic">Отчество:</span>
-            <input class="control__input-patronymic" type="text" name="user-patronymic"
+          <label class="form__control">
+            <span class="form__text-patronymic">Отчество:</span>
+            <input class="form__input-patronymic" type="text" name="user-patronymic"
               placeholder="Отчество, если желаете">
           </label>
         </div>
@@ -158,18 +156,19 @@
         <div class="form__wrapper-phone-email">
           <div class="form__wrapper-phone">
             <h3 class="form__title">тел</h3>
-            <input class="input-phone" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" aria-label="Телефон">
+            <input class="form__input-phone" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+              aria-label="Телефон">
           </div>
 
           <div class="form__wrapper-email">
             <h3 class="form__title">e-mail</h3>
-            <input class="input-email" type="email" name="email" placeholder="Ваш Email*" aria-label="Email">
+            <input class="form__input-email" type="email" name="email" placeholder="Ваш Email*" aria-label="Email">
           </div>
         </div>
 
         <div class="form__wrapper-textarea">
           <h3 class="form__title">доп</h3>
-          <textarea class="control-textarea" name="message" cols="30" rows="10"
+          <textarea class="form__textarea" name="message" cols="30" rows="10"
             placeholder="Опишите все ваши пожелания к заказу" aria-label="Текстовое поле для сообщения"></textarea>
         </div>
 
@@ -182,7 +181,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo-link" href="index.html">
-        <img class="page-footer__logo-icon" src="./img/logo-footer.svg" alt="Логотип магазина Мишка.">
+        <img class="page-footer__logo" src="./img/logo-footer.svg" alt="Логотип магазина Мишка.">
       </a>
       <ul class="social">
         <li class="social__item">

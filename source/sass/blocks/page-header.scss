@@ -1,8 +1,12 @@
 .page-header {
-  background-color: $color-white;
   outline: 1px solid $color-green;
 }
 
 .page-header__wrapper {
-  padding: 1px 30px;
+  padding: 20px 30px;
+}
+
+.page-header__image {
+  width: 86px;
+  height: 35px;
 }

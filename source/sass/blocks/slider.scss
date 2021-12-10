@@ -1,7 +1,6 @@
 .slider__title {
   font-size: 25px;
   line-height: 30px;
-  color: $color-black;
 }
 
 .slider__text {
@@ -15,13 +14,12 @@
   font-size: 17px;
   line-height: 24px;
   color: $color-black;
+}
 
-  span {
-    font-size: 17px;
-    line-height: 30px;
-    font-weight: 400;
-    color: $color-charcoal;
-  }
+.slider__author-contact {
+  font-weight: 400;
+  color: $color-charcoal;
+  line-height: 30px;
 }
 
 .slider__button {
@@ -29,5 +27,4 @@
   line-height: 20px;
   color: $color-charcoal;
   text-transform: uppercase;
-  text-decoration: none;
 }

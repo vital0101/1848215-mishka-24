@@ -6,33 +6,34 @@
 .form__discription {
   font-size: 13px;
   line-height: 24px;
-  font-weight: normal;
+  font-weight: 400;
   color: $color-charcoal;
 }
 
 .form__title {
   line-height: 16px;
-  font-size: 17px;
   text-transform: uppercase;
   color: $color-downy;
 }
 
 .form__radio-list {
-  font-size: 17px;
   line-height: 18px;
   color: $color-black;
+}
+
+.form__textarea {
+  width: 100%;
+  min-height: 142px;
 }
 
 .form__legend {
   font-size: 14px;
   line-height: 16px;
-  font-weight: normal;
+  font-weight: 400;
   color: $color-charcoal;
 }
 
 .form__button-submit {
   line-height: 16px;
-  font-size: 17px;
   color: $color-charcoal;
-  text-transform: uppercase;
 }
