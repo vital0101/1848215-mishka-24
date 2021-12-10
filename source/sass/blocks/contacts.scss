@@ -1,0 +1,38 @@
+.contacts {
+  padding-bottom: 39px;
+  outline: 1px solid $color-green;
+}
+
+.contacts__wrapper {
+  padding: 0 30px;
+}
+
+.contacts__title {
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.contacts__list {
+  display: flex;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $color-charcoal;
+}
+
+.contacts__item {
+  width: 76px;
+}
+
+.contacts__discription {
+  margin: 0;
+  width: 183px;
+}
+
+.contacts__button {
+  font-size: 18px;
+  line-height: 20px;
+  color: $color-charcoal;
+  text-transform: uppercase;
+}

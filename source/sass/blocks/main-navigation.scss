@@ -1,0 +1,31 @@
+.main-navigation__wrapper {
+  // display: none;
+}
+
+.main-navigation__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-navigation__link {
+  display: block;
+  line-height: 24px;
+}
+
+.main-navigation__search {
+  display: block;
+  line-height: 24px;
+}
+
+.main-navigation__cart {
+  display: block;
+  line-height: 24px;
+}
+
+.main-navigation__legend {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $color-charcoal;
+}

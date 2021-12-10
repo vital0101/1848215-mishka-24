@@ -1,0 +1,30 @@
+.slider__title {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.slider__text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: $color-charcoal;
+}
+
+.slider__author-info {
+  font-size: 17px;
+  line-height: 24px;
+  color: $color-black;
+}
+
+.slider__author-contact {
+  font-weight: 400;
+  color: $color-charcoal;
+  line-height: 30px;
+}
+
+.slider__button {
+  font-size: 18px;
+  line-height: 20px;
+  color: $color-charcoal;
+  text-transform: uppercase;
+}

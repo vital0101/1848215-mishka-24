@@ -1,0 +1,57 @@
+.promo {
+  padding-bottom: 39px;
+  outline: 1px solid $color-green;
+}
+
+.promo__wrapper {
+  padding: 0 30px;
+}
+
+.promo__title {
+  line-height: 30px;
+  font-size: 25px;
+  margin: 0;
+}
+
+.promo__label {
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $color-downy;
+  margin: 0;
+}
+
+.promo__text {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $color-charcoal;
+}
+
+.promo__list {
+  display: flex;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $color-charcoal;
+}
+
+.promo__item {
+  width: 97px;
+}
+
+.promo__discription {
+  margin: 0;
+}
+
+.promo__price {
+  line-height: 24px;
+  font-size: 17px;
+  color: $color-charcoal;
+}
+
+.promo__button {
+  display: block;
+  line-height: 18px;
+  font-size: 20px;
+  color: $color-charcoal;
+}

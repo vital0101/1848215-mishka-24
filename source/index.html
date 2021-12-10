@@ -6,11 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
   <section class="intro">
-    <h1 class="visully-hidden">Главная страница</h1>
+    <h1 class="visually-hidden">Главная страница</h1>
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo" aria-label="Главная страница.">
@@ -48,19 +49,21 @@
               Корзина: пока пуста
             </a>
           </div>
-          <ul class="main-navigation__list">
-            <li class="main-navigation__item">
-              <a class="main-navigation__link main-navigation__link--hidden" href="#">Новые поступления</a>
-            </li>
-            <li class="main-navigation__item">
-              <a class="main-navigation__link main-navigation__link--hidden" href="#">Распродажа</a>
-            </li>
-          </ul>
-          <p class="main-navigation__legend">Бесплатная доставка по России</p>
+          <div class="main-navigation__wrapper">
+            <ul class="main-navigation__list">
+              <li class="main-navigation__item">
+                <a class="main-navigation__link main-navigation__link--hidden" href="#">Новые поступления</a>
+              </li>
+              <li class="main-navigation__item">
+                <a class="main-navigation__link main-navigation__link--hidden" href="#">Распродажа</a>
+              </li>
+            </ul>
+            <p class="main-navigation__legend">Бесплатная доставка по России</p>
+          </div>
         </nav>
       </div>
     </header>
-    <section class="lead">
+    <section class="lead lead--background-image">
       <div class="lead__wrapper">
         <h2 class="lead__title">Милые штуки ручной работы для дома</h2>
         <a class="lead__link" href="#">Предметы интерьера</a>
@@ -77,13 +80,17 @@
           ручная работа. Доступны в шести расцветках и трёх размерах.</p>
         <dl class="promo__list">
           <dt class="promo__item">Цвет:</dt>
-          <dd class="promo__discription">«Тиффани»/серый</dd>
+          <dd class="promo__discription">тиффани/серый</dd>
+        </dl>
+        <dl class="promo__list">
           <dt class="promo__item">Диаметр:</dt>
           <dd class="promo__discription">25 см</dd>
+        </dl>
+        <dl class="promo__list">
           <dt class="promo__item">Высота:</dt>
           <dd class="promo__discription">15 см</dd>
         </dl>
-        <img class="promo__image" src="./img/knitted-baskets-mobile.png" alt="Вязанные корзинки." width="216"
+        <img class="promo__image" src="./img/knitted-baskets-mobile.png" alt="Вязанные корзинки." width="260"
           height="315">
         <span class="promo__price">Цена: 990 руб.</span>
         <a class="promo__button button">заказать</a>
@@ -114,7 +121,7 @@
               стали более стильными, а также набирают больше лайков!
             </p>
             <cite class="slider__author-info">Анастасия Красильникова
-              <span>@misssssiskras</span>
+              <span class="slider__author-contact">@misssssiskras</span>
             </cite>
           </blockquote>
         </div>
@@ -136,13 +143,12 @@
           <dt class="contacts__item">адрес:</dt>
           <dd class="contacts__discription">Санкт-Петербург ул. Большая Конюшенная д.19/8, офис 101</dd>
         </dl>
-        <!-- здесь будет интерактивная карта проезда -->
-        <div class="contacts__map">
-          <img class="map" src="./img/map-mobile.png" width="320" height="455"
-            alt="Карта с указателем местонахождения магазина">
-        </div>
-        <a class="contacts__button button" href="#">напишите нам</a>
       </div>
+      <div class="contacts__map">
+        <img class="map" src="./img/map-mobile.png" width="320" height="455"
+          alt="Карта с указателем местонахождения магазина">
+      </div>
+      <a class="contacts__button button" href="#">напишите нам</a>
     </section>
   </main>
   <footer class="page-footer">

@@ -1,0 +1,56 @@
+.form-order {
+  padding: 1px 30px;
+  outline: 1px solid $color-green;
+}
+
+.form__discription {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $color-charcoal;
+}
+
+.form__title {
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $color-downy;
+}
+
+.form__text {
+  line-height: 18px;
+}
+
+.form__checkbox-list {
+  line-height: 18px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__radio-list {
+  line-height: 18px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__input {
+  width: 100%;
+}
+
+.form__textarea {
+  width: 100%;
+  min-height: 142px;
+}
+
+.form__legend {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $color-charcoal;
+}
+
+.form__button-submit {
+  line-height: 16px;
+  color: $color-charcoal;
+}

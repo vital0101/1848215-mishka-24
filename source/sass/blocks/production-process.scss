@@ -1,0 +1,23 @@
+.production-process {
+  padding: 1px 30px;
+  outline: 1px solid $color-green;
+}
+
+.production-process__title {
+  line-height: 24px;
+  color: $color-black;
+}
+
+.production-process__discription {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $color-charcoal;
+}
+
+.production-process__button {
+  display: block;
+  line-height: 16px;
+  font-size: 18px;
+  color: $color-charcoal;
+}

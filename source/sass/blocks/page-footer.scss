@@ -1,0 +1,19 @@
+.page-footer {
+  margin-top: auto;
+  background-color: $color-white-smoke;
+  outline: 1px solid $color-green;
+}
+
+.page-footer__wrapper {
+  padding: 25px 30px 20px;
+}
+
+.page-footer__logo {
+  width: 102px;
+  height: 34px;
+}
+
+.page-footer__copyright-text {
+  font-size: 19px;
+  line-height: 18px;
+}
