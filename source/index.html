@@ -15,13 +15,26 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo" aria-label="Главная страница.">
-          <img class="page-header__image" src="./img/mishka-logo-mobile.svg.svg" alt="Логотип магазина Мишка."
-            width="86" height="35">
+          <img class="page-header__image" src="./img/mishka-logo-mobile.svg" alt="Логотип магазина Мишка." width="86"
+            height="35">
+        </a>
+        <a class="page-header__logo-tablet" aria-label="Главная страница.">
+          <img class="page-header__image" src="./img/mishka-logo-tablet.svg" alt="Логотип магазина Мишка." width="86"
+            height="35">
+        </a>
+        <a class="page-header__logo-desktop" aria-label="Главная страница.">
+          <img class="page-header__image" src="./img/mishka-logo-desktop.svg" alt="Логотип магазина Мишка." width="86"
+            height="35">
         </a>
         <nav class="page-header__main-navigation main-navigation">
           <button class="main-navigation__toggle" type="button" aria-label="Открыть/закрыть меню.">
+            <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 0H0V2H20V0Z" fill="#231F20" />
+              <path d="M20 6H0V8H20V6Z" fill="#231F20" />
+              <path d="M20 12H0V14H20V12Z" fill="#231F20" />
+            </svg>
           </button>
-          <div class="main-navigation__wrapper">
+          <div class="main-navigation__wrapper main-navigation__wrapper--site ">
             <ul class="main-navigation__list">
               <li class="main-navigation__item">
                 <a class="main-navigation__link" href="catalog.html">Каталог товаров</a>
@@ -49,7 +62,7 @@
               Корзина: пока пуста
             </a>
           </div>
-          <div class="main-navigation__wrapper">
+          <div class="main-navigation__wrapper main-navigation__wrapper--user">
             <ul class="main-navigation__list">
               <li class="main-navigation__item">
                 <a class="main-navigation__link main-navigation__link--hidden" href="#">Новые поступления</a>
@@ -64,11 +77,11 @@
       </div>
     </header>
     <section class="lead lead--background-image">
-      <div class="lead__wrapper">
-        <h2 class="lead__title">Милые штуки ручной работы для дома</h2>
-        <a class="lead__link" href="#">Предметы интерьера</a>
-        <a class="lead__link" href="#">Детские игрушки</a>
-      </div>
+      <!-- <div class="lead__wrapper"> -->
+      <h2 class="lead__title">Милые штуки ручной работы для дома</h2>
+      <a class="lead__link lead__link--item" href="#">Предметы интерьера</a>
+      <a class="lead__link lead__link--toy" href="#">Детские игрушки</a>
+      <!-- </div> -->
     </section>
   </section>
   <main class="page-main">

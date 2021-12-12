@@ -1,12 +1,31 @@
 .page-header {
   outline: 1px solid $color-green;
+  border-bottom: 1px solid $color-grey;
 }
 
 .page-header__wrapper {
+  display: flex;
+  flex-direction: column;
   padding: 20px 30px;
+}
+
+.page-header__logo {
+  align-self: center;
+}
+
+.page-header__logo-tablet {
+  display: none;
+}
+
+.page-header__logo-desktop {
+  display: none;
 }
 
 .page-header__image {
   width: 86px;
   height: 35px;
+}
+
+.page-header__main-navigation {
+  outline: 1px solid $color-green;
 }

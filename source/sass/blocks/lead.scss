@@ -1,13 +1,16 @@
 .lead {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px 103px 103px;
   // min-width: 320px;
   background-color: $color-white-smoke;
+  background-image: url("../img/hero-mobile.png");
+  background-repeat: no-repeat;
+  background-position: top;
 
-  outline: 1px solid $color-green;
-
-  &--background-image {
-    background-image: url("../img/hero-mobile.png");
-    background-repeat: no-repeat;
-    background-position: top;
+  &--bg-image {
+    background-image: none;
+    height: 277px;
   }
 }
 
@@ -32,7 +35,14 @@
   line-height: 24px;
   text-decoration: none;
   color: $color-white;
-  background-color: $color-downy;
+
+  &--item {
+    background-color: $color-downy;
+  }
+
+  &--toy {
+    background-color: $color-puerto-rico;
+  }
 }
 
 .lead__title-catalog {
