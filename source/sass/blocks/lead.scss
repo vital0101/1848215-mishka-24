@@ -2,11 +2,11 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 300px 103px 103px;
-  // min-width: 320px;
   background-color: $color-white-smoke;
   background-image: url("../img/hero-mobile.png");
   background-repeat: no-repeat;
   background-position: top;
+  border-top: 1px solid $color-grey;
 
   &--bg-image {
     background-image: none;

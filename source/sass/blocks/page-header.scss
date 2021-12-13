@@ -1,31 +1,23 @@
 .page-header {
   outline: 1px solid $color-green;
-  border-bottom: 1px solid $color-grey;
+
+  @media (min-width: $vp--768) {
+    width: auto;
+  }
+
+  @media (min-width: $vp--1150) {
+    width: auto;
+  }
 }
 
 .page-header__wrapper {
-  display: flex;
-  flex-direction: column;
   padding: 20px 30px;
-}
 
-.page-header__logo {
-  align-self: center;
-}
+  @media (min-width: $vp--768) {
+    padding: 0 48px;
+  }
 
-.page-header__logo-tablet {
-  display: none;
-}
-
-.page-header__logo-desktop {
-  display: none;
-}
-
-.page-header__image {
-  width: 86px;
-  height: 35px;
-}
-
-.page-header__main-navigation {
-  outline: 1px solid $color-green;
+  @media (min-width: $vp--1150) {
+    padding: 0 52px;
+  }
 }
