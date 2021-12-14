@@ -1,16 +1,31 @@
 .contacts {
   padding-bottom: 39px;
   outline: 1px solid $color-green;
+
+  @media (min-width: $vp--768) {
+
+  }
+
+  @media (min-width: $vp--1150) {
+  }
 }
 
 .contacts__wrapper {
   padding: 0 30px;
+
+  @media (min-width: $vp--1150) {
+  }
 }
 
 .contacts__title {
   margin: 0;
   font-size: 25px;
   line-height: 30px;
+}
+
+.contacts__list-wrapper {
+  @media (min-width: $vp--768) {
+  }
 }
 
 .contacts__list {
@@ -28,6 +43,25 @@
 .contacts__discription {
   margin: 0;
   width: 183px;
+}
+
+.contacts__map {
+  @media (min-width: $vp--768) {
+    width: 768px;
+    height: 457px;
+  }
+
+  @media (min-width: $vp--1150) {
+    width: 527px;
+    height: 457px;
+  }
+}
+
+.contacts__map-image {
+  @media (min-width: $vp--1150) {
+    width: 527px;
+    height: 457px;
+  }
 }
 
 .contacts__button {

@@ -41,6 +41,12 @@
             <li class="main-navigation__item">
               <a class="main-navigation__link" href="form.html">Вязание на заказ</a>
             </li>
+            <li class="main-navigation__item main-navigation__item--hidden">
+              <a class="main-navigation__link" href="#">Новые поступления</a>
+            </li>
+            <li class="main-navigation__item main-navigation__item--hidden">
+              <a class="main-navigation__link" href="#">Распродажа</a>
+            </li>
           </ul>
           <div class="main-navigation__user">
             <a class="main-navigation__search" href="#" aria-label="Поиск по сайту.">
@@ -62,14 +68,6 @@
               Корзина: пока пуста
             </a>
           </div>
-          <ul class="main-navigation__list">
-            <li class="main-navigation__item">
-              <a class="main-navigation__link main-navigation__link--hidden" href="#">Новые поступления</a>
-            </li>
-            <li class="main-navigation__item">
-              <a class="main-navigation__link main-navigation__link--hidden" href="#">Распродажа</a>
-            </li>
-          </ul>
           <p class="main-navigation__legend">Бесплатная доставка по России</p>
         </nav>
       </div>
@@ -89,18 +87,20 @@
         <span class="promo__label">товар недели</span>
         <p class="promo__text">Экологически чистая пряжа,
           ручная работа. Доступны в шести расцветках и трёх размерах.</p>
-        <dl class="promo__list">
-          <dt class="promo__item">Цвет:</dt>
-          <dd class="promo__discription">тиффани/серый</dd>
-        </dl>
-        <dl class="promo__list">
-          <dt class="promo__item">Диаметр:</dt>
-          <dd class="promo__discription">25 см</dd>
-        </dl>
-        <dl class="promo__list">
-          <dt class="promo__item">Высота:</dt>
-          <dd class="promo__discription">15 см</dd>
-        </dl>
+        <div class="promo__list-wrapper">
+          <dl class="promo__list">
+            <dt class="promo__item">Цвет:</dt>
+            <dd class="promo__discription">тиффани/серый</dd>
+          </dl>
+          <dl class="promo__list">
+            <dt class="promo__item">Диаметр:</dt>
+            <dd class="promo__discription">25 см</dd>
+          </dl>
+          <dl class="promo__list">
+            <dt class="promo__item">Высота:</dt>
+            <dd class="promo__discription">15 см</dd>
+          </dl>
+        </div>
         <img class="promo__image" src="./img/knitted-baskets-mobile.png" alt="Вязанные корзинки." width="260"
           height="315">
         <span class="promo__price">Цена: 990 руб.</span>
@@ -146,17 +146,19 @@
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="contacts__title">Контакты</h2>
-        <dl class="contacts__list">
-          <dt class="contacts__item">e-mail:</dt>
-          <dd class="contacts__discription"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
-        </dl>
-        <dl class="contacts__list">
-          <dt class="contacts__item">адрес:</dt>
-          <dd class="contacts__discription">Санкт-Петербург ул. Большая Конюшенная д.19/8, офис 101</dd>
-        </dl>
+        <div class="contacts__list-wrapper">
+          <dl class="contacts__list">
+            <dt class="contacts__item">e-mail:</dt>
+            <dd class="contacts__discription"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
+          </dl>
+          <dl class="contacts__list">
+            <dt class="contacts__item">адрес:</dt>
+            <dd class="contacts__discription">Санкт-Петербург ул. Большая Конюшенная д.19/8, офис 101</dd>
+          </dl>
+        </div>
       </div>
       <div class="contacts__map">
-        <img class="map" src="./img/map-mobile.png" width="320" height="455"
+        <img class="contacts__map-image" src="./img/map-mobile.png" width="320" height="455"
           alt="Карта с указателем местонахождения магазина">
       </div>
       <a class="contacts__button button" href="#">напишите нам</a>
