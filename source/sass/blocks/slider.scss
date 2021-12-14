@@ -1,6 +1,28 @@
+.slider {
+  @media (min-width: $vp--768) {
+    padding: 0 50px;
+    display: grid;
+    grid-template-columns: 210px 1fr 210px;
+    grid-template-rows: 50px 120px 60px;
+  }
+}
+
 .slider__title {
   font-size: 25px;
   line-height: 30px;
+  margin: 0;
+
+  @media (min-width: $vp--768) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+
+.slider__list {
+  @media (min-width: $vp--768) {
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+  }
 }
 
 .slider__text {
@@ -22,9 +44,21 @@
   line-height: 30px;
 }
 
+.slider__buttons {
+  @media (min-width: $vp--768) {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+}
+
 .slider__button {
   font-size: 18px;
   line-height: 20px;
   color: $color-charcoal;
   text-transform: uppercase;
+
+  @media (min-width: $vp--768) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
 }
