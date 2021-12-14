@@ -21,3 +21,12 @@
     padding: 0 52px;
   }
 }
+
+.page-header__main-navigation {
+  outline: 1px solid $color-green;
+
+  @media (min-width: $vp--768) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
