@@ -15,24 +15,16 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <nav class="page-header__main-navigation main-navigation">
-          <a class="main-navigation__logo" aria-label="Главная страница.">
-            <img class="main-navigation__image" src="./img/mishka-logo-mobile.svg" alt="Логотип магазина Мишка."
-              width="86" height="35">
-          </a>
-          <a class="main-navigation__logo-tablet" aria-label="Главная страница.">
-            <img class="main-navigation__image" src="./img/mishka-logo-tablet.svg" alt="Логотип магазина Мишка."
-              width="86" height="35">
-          </a>
-          <a class="main-navigation__logo-desktop" aria-label="Главная страница.">
-            <img class="main-navigation__image" src="./img/mishka-logo-desktop.svg" alt="Логотип магазина Мишка."
-              width="86" height="35">
+          <a class="main-navigation__logo-link" aria-label="Главная страница.">
+            <img class="main-navigation__logo-image-mobile" src="./img/mishka-logo-mobile.svg"
+              alt="Логотип магазина Мишка." width="86" height="35">
+            <img class="main-navigation__logo-image-tablet" src="./img/mishka-logo-tablet.svg"
+              alt="Логотип магазина Мишка." width="86" height="35">
+            <img class="main-navigation__logo-image-desktop" src="./img/mishka-logo-desktop.svg"
+              alt="Логотип магазина Мишка." width="86" height="35">
           </a>
           <button class="main-navigation__toggle" type="button" aria-label="Открыть/закрыть меню.">
-            <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20 0H0V2H20V0Z" fill="#231F20" />
-              <path d="M20 6H0V8H20V6Z" fill="#231F20" />
-              <path d="M20 12H0V14H20V12Z" fill="#231F20" />
-            </svg>
+            <span class="main-navigation__toggle-gamburger"></span>
           </button>
           <ul class="main-navigation__list">
             <li class="main-navigation__item">
@@ -73,11 +65,17 @@
       </div>
     </header>
     <section class="lead lead--background-image">
-      <!-- <div class="lead__wrapper"> -->
-      <h2 class="lead__title">Милые штуки ручной работы для дома</h2>
-      <a class="lead__link lead__link--item" href="#">Предметы интерьера</a>
-      <a class="lead__link lead__link--toy" href="#">Детские игрушки</a>
-      <!-- </div> -->
+      <div class="lead__wrapper">
+        <h2 class="lead__title">Милые штуки ручной работы для дома</h2>
+        <div class="lead__link-wrapper">
+          <a class="lead__link lead__link--interior" href="#">
+            <span class="lead__link-text">Предметы интерьера</span>
+          </a>
+          <a class="lead__link lead__link--toy" href="#">
+            <span class="lead__link-text">Детские игрушки</span>
+          </a>
+        </div>
+      </div>
     </section>
   </section>
   <main class="page-main">
@@ -111,8 +109,8 @@
       <div class="about-us__wrapper">
         <h2 class="about-us__title">Коротко о нас:</h2>
         <ul class="about-us__list">
-          <li class="about-us__item">Скандинавский стиль по российской цене</li>
           <li class="about-us__item">Экологически чистые материалы</li>
+          <li class="about-us__item">Скандинавский стиль по российской цене</li>
           <li class="about-us__item">Увеличивает лайки на фотографиях</li>
           <li class="about-us__item">Связано вручную с любовью и умилением</li>
           <li class="about-us__item">Поддержка отечественного производителя</li>
@@ -144,24 +142,20 @@
       </div>
     </section>
     <section class="contacts">
-      <div class="contacts__wrapper-grid">
-        <div class="contacts__wrapper">
-          <h2 class="contacts__title">Контакты</h2>
-          <div class="contacts__list-wrapper">
-            <dl class="contacts__list">
-              <dt class="contacts__item">e-mail:</dt>
-              <dd class="contacts__discription"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
-            </dl>
-            <dl class="contacts__list">
-              <dt class="contacts__item">адрес:</dt>
-              <dd class="contacts__discription">Санкт-Петербург ул. Большая Конюшенная д.19/8, офис 101</dd>
-            </dl>
-          </div>
+      <div class="contacts__wrapper">
+        <h2 class="contacts__title">Контакты</h2>
+        <div class="contacts__list-wrapper">
+          <dl class="contacts__list">
+            <dt class="contacts__item">e-mail:</dt>
+            <dd class="contacts__discription"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
+          </dl>
+          <dl class="contacts__list">
+            <dt class="contacts__item">адрес:</dt>
+            <dd class="contacts__discription">Санкт-Петербург ул. Большая Конюшенная д.19/8, офис 101</dd>
+          </dl>
         </div>
-        <div class="contacts__map">
-          <img class="contacts__map-image" src="./img/map-mobile.png" width="320" height="455"
-            alt="Карта с указателем местонахождения магазина">
-        </div>
+        <img class="contacts__map-image" src="./img/map-mobile.png" width="320" height="455"
+          alt="Карта с указателем местонахождения магазина">
         <a class="contacts__button button" href="#">напишите нам</a>
       </div>
     </section>
@@ -213,7 +207,6 @@
               d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
               fill="#63D1BB" />
           </svg>
-
         </a>
       </div>
     </div>

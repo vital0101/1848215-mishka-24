@@ -2,14 +2,5 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  width: 320px;
   min-height: 100%;
-
-  @media (min-width: $vp--768) {
-    width: 768px;
-  }
-
-  @media (min-width: $vp--1150) {
-    width: 1150px;
-  }
 }

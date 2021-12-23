@@ -1,17 +1,24 @@
 .about-us {
   padding-bottom: 58px;
-  outline: 1px solid $color-green;
 }
 
 .about-us__wrapper {
   padding: 0 30px;
+
+  @media (min-width: $vp--768) {
+    padding: 0 50px;
+  }
 }
 
 .about-us__title {
-  margin: 0;
+  margin: 0 0 30px;
   font-size: 25px;
   line-height: 30px;
   color: $color-black;
+
+  @media (min-width: $vp--1150) {
+    margin-left: 179px;
+  }
 }
 
 .about-us__list {
@@ -21,5 +28,15 @@
 
   @media (min-width: $vp--768) {
     column-count: 2;
+    // margin-left: 179px;
   }
+
+  @media (min-width: $vp--1150) {
+    column-count: 2;
+    margin-left: 179px;
+  }
+}
+
+.about-us__item {
+  margin-bottom: 20px;
 }
