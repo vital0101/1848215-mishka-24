@@ -1,12 +1,17 @@
 .review {
   padding-bottom: 45px;
-  outline: 1px solid $color-green;
 }
 
 .review__wrapper {
   padding: 0 30px;
-}
 
-.slider__title {
-  margin: 0;
+  @media (min-width: $vp--768) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: $vp--1150) {
+    width: 1150px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
 }

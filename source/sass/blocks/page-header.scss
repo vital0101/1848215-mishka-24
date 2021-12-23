@@ -1,12 +1,19 @@
 .page-header {
-  outline: 1px solid $color-green;
+  padding: 20px 0;
+
+  @media (min-width: $vp--768) {
+    min-height: 140px;
+  }
 }
 
 .page-header__wrapper {
-  padding: 20px 30px;
-}
+  padding: 0 30px;
 
-.page-header__image {
-  width: 86px;
-  height: 35px;
+  @media (min-width: $vp--768) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: $vp--1150) {
+    // padding: 0 52px;
+  }
 }
