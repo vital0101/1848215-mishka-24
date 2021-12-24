@@ -5,15 +5,3 @@
     min-height: 140px;
   }
 }
-
-.page-header__wrapper {
-  padding: 0 30px;
-
-  @media (min-width: $vp--768) {
-    padding: 0 50px;
-  }
-
-  @media (min-width: $vp--1150) {
-    // padding: 0 52px;
-  }
-}

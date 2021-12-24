@@ -3,8 +3,8 @@
   background-color: $color-white-smoke;
   background-image: url("../img/hero-mobile.png");
   background-repeat: no-repeat;
-  background-position: top;
-  // background-size: cover;
+  background-position: center;
+  background-size: cover;
   border-top: 1px solid $color-grey;
 
   &--bg-image {
@@ -14,16 +14,12 @@
 
   @media (min-width: $vp--768) {
     min-height: 758px;
-    background-repeat: no-repeat;
-    background-position: top;
     background-image: url("../img/hero-tablet.png");
   }
 
   @media (min-width: $vp--1150) {
     min-height: 763px;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-image: url("../../img/hero-desktop.png");
+    background-image: url("../img/hero-desktop.png");
   }
 }
 
@@ -31,10 +27,6 @@
   display: flex;
   flex-direction: column;
   min-height: inherit;
-
-  @media (min-width: $vp--768) {
-    padding: 0 50px;
-  }
 }
 
 .lead__title {
