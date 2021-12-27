@@ -13,23 +13,34 @@
   <section class="intro">
     <h1 class="visually-hidden">Форма обратной связи</h1>
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <a class="page-header__logo" href="index.html" aria-label="Главная страница.">
-          <img class="page-header__image" src="./img/mishka-logo-mobile.svg.svg" alt="Логотип магазина Мишка."
-            width="86" height="35">
-        </a>
+      <div class="container">
         <nav class="page-header__main-navigation main-navigation">
+          <a class="main-navigation__logo-link" href="index.html" aria-label="Главная страница.">
+            <img class="main-navigation__logo-image-mobile" src="./img/mishka-logo-mobile.svg"
+              alt="Логотип магазина Мишка." width="86" height="35">
+            <img class="main-navigation__logo-image-tablet" src="./img/mishka-logo-tablet.svg"
+              alt="Логотип магазина Мишка." width="86" height="35">
+            <img class="main-navigation__logo-image-desktop" src="./img/mishka-logo-desktop.svg"
+              alt="Логотип магазина Мишка." width="86" height="35">
+          </a>
           <button class="main-navigation__toggle" type="button" aria-label="Открыть/закрыть меню.">
+            <span class="main-navigation__toggle-gamburger"></span>
           </button>
-          <div class="main-navigation__wrapper">
-            <ul class="main-navigation__list">
-              <li class="main-navigation__item">
-                <a class="main-navigation__link" href="catalog.html">Каталог товаров</a>
-              </li>
-              <li class="main-navigation__item">
-                <a class="main-navigation__link" href="form.html">Вязание на заказ</a>
-              </li>
-            </ul>
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="main-navigation__item main-navigation__item--hidden">
+              <a class="main-navigation__link" href="#">Новые поступления</a>
+            </li>
+            <li class="main-navigation__item main-navigation__item--hidden">
+              <a class="main-navigation__link" href="#">Распродажа</a>
+            </li>
+          </ul>
+          <div class="main-navigation__user">
             <a class="main-navigation__search" href="#" aria-label="Поиск по сайту.">
               <svg class="main-navigation__search-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -49,20 +60,12 @@
               Корзина: пока пуста
             </a>
           </div>
-          <ul class="main-navigation__list">
-            <li class="main-navigation__item">
-              <a class="main-navigation__link main-navigation__link--hidden" href="#">Новые поступления</a>
-            </li>
-            <li class="main-navigation__item">
-              <a class="main-navigation__link main-navigation__link--hidden" href="#">Распродажа</a>
-            </li>
-          </ul>
           <p class="main-navigation__legend">Бесплатная доставка по России</p>
         </nav>
       </div>
     </header>
-    <section class="lead">
-      <h2 class="lead__title-order">Вязание на заказ</h2>
+    <section class="form-lead container">
+      <h2 class="form-lead__title">Вязание на заказ</h2>
     </section>
   </section>
 
@@ -70,12 +73,12 @@
     <section class="form-order">
       <h2 class="visually-hidden">Форма заказа</h2>
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="form__discription">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
+        <p class="form__discription container">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
           заказа и мы
           свяжемся с вами, чтобы уточнить детали.</p>
 
-        <div class="form__wrapper-type">
-          <h3 class="form__title">тип</h3>
+        <div class="form__wrapper-radio container">
+          <h3 class="form__title form__title--radio">тип</h3>
           <ul class="form__radio-list">
             <li class="form__radio-item">
               <label class="form__control">
@@ -92,8 +95,8 @@
           </ul>
         </div>
 
-        <div class="form__wrapper-color">
-          <h3 class="form__title">цвет</h3>
+        <div class="form__wrapper-checkbox container">
+          <h3 class="form__title form__title--checkbox">цвет</h3>
           <ul class="form__checkbox-list">
             <li class="form__checkbox-item">
               <label class="form__control">
@@ -134,50 +137,55 @@
           </ul>
         </div>
 
-        <div class="form__initials">
-          <h3 class="form__title">фио</h3>
-          <label class="form__control">
-            <span class="form__text">Имя:</span>
-            <input class="form__input" type="text" name="user-name" placeholder="Введите ваше имя*">
-          </label>
+        <div class="form__wrapper-initials container">
+          <h3 class="form__title form__title--initials">фио</h3>
+          <div class="form__initials-wrapper">
+            <label class="form__control">
+              <span class="form__text">Имя:</span>
+              <input class="form__input form__input--name" type="text" name="user-name" placeholder="Введите ваше имя*">
+            </label>
 
-          <label class="form__control">
-            <span class="form__text">Фамилия:</span>
-            <input class="form__input" type="text" name="user-surname" placeholder="Укажите фамилию*">
-          </label>
+            <label class="form__control">
+              <span class="form__text">Фамилия:</span>
+              <input class="form__input form__input--surname" type="text" name="user-surname"
+                placeholder="Укажите фамилию*">
+            </label>
 
-          <label class="form__control">
-            <span class="form__text">Отчество:</span>
-            <input class="form__input" type="text" name="user-patronymic" placeholder="Отчество, если желаете">
-          </label>
+            <label class="form__control">
+              <span class="form__text">Отчество:</span>
+              <input class="form__input form__input--patronymic" type="text" name="user-patronymic"
+                placeholder="Отчество, если желаете">
+            </label>
+          </div>
         </div>
 
-        <div class="form__wrapper-phone-email">
+        <div class="form__wrapper-phone-email container">
           <div class="form__wrapper-phone">
-            <h3 class="form__title">тел</h3>
+            <h3 class="form__title form__title--phone">тел</h3>
             <input class="form__input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" aria-label="Телефон">
           </div>
 
           <div class="form__wrapper-email">
-            <h3 class="form__title">e-mail</h3>
+            <h3 class="form__title form__title--email">e-mail</h3>
             <input class="form__input" type="email" name="email" placeholder="Ваш Email*" aria-label="Email">
           </div>
         </div>
 
-        <div class="form__wrapper-textarea">
-          <h3 class="form__title">доп</h3>
+        <div class="form__wrapper-textarea container">
+          <h3 class="form__title form__title--textarea">доп</h3>
           <textarea class="form__textarea" name="message" cols="30" rows="10"
             placeholder="Опишите все ваши пожелания к заказу" aria-label="Текстовое поле для сообщения"></textarea>
         </div>
-
-        <span class="form__legend">* Поля обязательны для заполнения</span>
-        <button class="form__button-submit button" type="submit">отправить заказ</button>
+        <div class="form__legend-button-wrapper container">
+          <span class="form__legend">* Поля обязательны для заполнения</span>
+          <button class="form__button-submit button" type="submit">отправить заказ</button>
+        </div>
       </form>
     </section>
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper  container">
       <a class="page-footer__logo-link" href="index.html">
         <img class="page-footer__logo" src="./img/logo-footer.svg" alt="Логотип магазина Мишка.">
       </a>

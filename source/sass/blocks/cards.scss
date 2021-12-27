@@ -1,21 +1,20 @@
 .cards {
-  padding: 1px 30px;
-  outline: 1px solid $color-green;
+  @media (min-width: $vp--1150) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+  }
 }
 
-.card__title {
-  line-height: 24px;
-}
+.cards__item {
+  padding-bottom: 30px;
 
-.card__discription {
-  display: block;
-  font-size: 13px;
-  line-height: 30px;
-  font-weight: 400;
-  color: $color-charcoal;
-}
+  @media (min-width: $vp--768) {
+    min-height: 335px;
+  }
 
-.card__price {
-  font-size: 15px;
-  line-height: 24px;
+  @media (min-width: $vp--1150) {
+    min-height: 659;
+    padding-bottom: 0;
+  }
 }

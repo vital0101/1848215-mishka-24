@@ -1,5 +1,4 @@
 .lead {
-  min-height: 489px;
   background-color: $color-white-smoke;
   background-image: url("../img/hero-mobile.png");
   background-repeat: no-repeat;
@@ -7,18 +6,11 @@
   background-size: cover;
   border-top: 1px solid $color-grey;
 
-  &--bg-image {
-    background-image: none;
-    height: 277px;
-  }
-
   @media (min-width: $vp--768) {
-    min-height: 758px;
     background-image: url("../img/hero-tablet.png");
   }
 
   @media (min-width: $vp--1150) {
-    min-height: 763px;
     background-image: url("../img/hero-desktop.png");
   }
 }
