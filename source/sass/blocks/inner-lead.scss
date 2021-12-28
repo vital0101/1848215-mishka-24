@@ -1,0 +1,29 @@
+.inner-lead {
+  display: flex;
+  min-height: 177px;
+  background-color: $color-white-smoke;
+
+  @media (min-width: $vp--768) {
+    min-height: 238px;
+  }
+
+  @media (min-width: $vp--1150) {
+    min-height: 272px;
+  }
+}
+
+.inner-lead__title {
+  margin: auto;
+  font-size: 27px;
+  line-height: 30px;
+
+  @media (min-width: $vp--768) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $vp--1150) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

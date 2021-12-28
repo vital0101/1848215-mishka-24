@@ -1,17 +1,3 @@
 .review {
   padding-bottom: 45px;
 }
-
-.review__wrapper {
-  padding: 0 30px;
-
-  @media (min-width: $vp--768) {
-    padding: 0 50px;
-  }
-
-  @media (min-width: $vp--1150) {
-    width: 1150px;
-    margin: 0 auto;
-    padding: 0 50px;
-  }
-}
