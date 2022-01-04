@@ -10,3 +10,30 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.bg-color {
+  @media (min-width: $vp--768) {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 100%;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $color-white-smoke;
+      z-index: -1;
+    }
+  }
+}
+
+.is-show {
+  display: block;
+}
+
+.is-hidden {
+  display: none;
+}

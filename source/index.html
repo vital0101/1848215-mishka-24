@@ -212,25 +212,32 @@
     </div>
   </footer>
 
-  <section class="modal-container">
-    <h2 class="modal-container__title">Добавить в корзину</h2>
-    <span class="modal-container__text">Выберите размер:</span>
-    <form class="modal-container__form" action="https://echo.htmlacademy.ru/" method="post">
-      <label class="modal-container__control">
-        <input class="visually-hidden modal-container__control-input" type="radio" name="size" value="smoll" checked>
-        <span class="modal-container__control-mark">s</span>
-      </label>
-      <label class="modal-container__control">
-        <input class="visually-hidden modal-container__control-input" type="radio" name="size" value="medium">
-        <span class="modal-container__control-mark">m</span>
-      </label>
-      <label class="modal-container__control">
-        <input class="visually-hidden modal-container__control-input" type="radio" name="size" value="large">
-        <span class="modal-container__control-mark">l</span>
-      </label>
-      <button class="modal-container__button button" type="submit">добавить</button>
-    </form>
-  </section>
+  <!-- поменять класс is-hidden на is-show для открытия модального окна -->
+  <div class="modal is-hidden">
+    <div class="modal__wrapper">
+      <section class="modal__content">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <span class="modal__text">Выберите размер:</span>
+        <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="modal__control-wrapper">
+            <label class="modal__control">
+              <input class="visually-hidden modal__control-input" type="radio" name="size" value="smoll" checked>
+              <span class="modal__control-mark">s</span>
+            </label>
+            <label class="modal__control">
+              <input class="visually-hidden modal__control-input" type="radio" name="size" value="medium">
+              <span class="modal__control-mark">m</span>
+            </label>
+            <label class="modal__control">
+              <input class="visually-hidden modal__control-input" type="radio" name="size" value="large">
+              <span class="modal__control-mark">l</span>
+            </label>
+          </div>
+          <button class="modal__button button" type="submit">добавить</button>
+        </form>
+      </section>
+    </div>
+  </div>
 </body>
 
 </html>
