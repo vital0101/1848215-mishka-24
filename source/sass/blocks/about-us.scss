@@ -8,8 +8,16 @@
   line-height: 30px;
   color: $color-black;
 
+  @media (min-width: $vp--768) {
+    margin-bottom: 40px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
   @media (min-width: $vp--1150) {
     margin-left: 179px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 
@@ -20,7 +28,8 @@
 
   @media (min-width: $vp--768) {
     column-count: 2;
-    // margin-left: 179px;
+    font-size: 22px;
+    line-height: 20px;
   }
 
   @media (min-width: $vp--1150) {
@@ -30,5 +39,78 @@
 }
 
 .about-us__item {
-  margin-bottom: 20px;
+  position: relative;
+  margin-bottom: 30px;
+
+  @media (min-width: $vp--768) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  &--icon-flower::before {
+    display: block;
+    width: 33px;
+    height: 38px;
+    margin-bottom: 20px;
+    background-image: url("../img/icon-flower.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
+  }
+
+  &--icon-style::before {
+    display: block;
+    width: 47px;
+    height: 38px;
+    margin-bottom: 20px;
+    background-image: url("../img/icon-style.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
+  }
+
+  &--icon-rocket::before {
+    display: block;
+    width: 55px;
+    height: 38px;
+    margin-bottom: 20px;
+    background-image: url("../img/icon-rocket.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
+  }
+
+  &--icon-ball::before {
+    display: block;
+    width: 35px;
+    height: 38px;
+    margin-bottom: 20px;
+    background-image: url("../img/icon-ball.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
+  }
+
+  &--icon-gift::before {
+    display: block;
+    width: 33px;
+    height: 38px;
+    margin-bottom: 20px;
+    background-image: url("../img/icon-gift.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
+  }
+
+  &--icon-heart::before {
+    display: block;
+    width: 34px;
+    height: 38px;
+    margin-bottom: 20px;
+    background-image: url("../img/icon-heart.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
+  }
 }
+

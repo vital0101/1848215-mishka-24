@@ -22,12 +22,12 @@
 
 .review__wrapper {
   @media (min-width: $vp--768) {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   @media (min-width: $vp--1150) {
-  grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 
