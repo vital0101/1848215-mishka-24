@@ -70,74 +70,83 @@
   </section>
 
   <main class="main-form">
-    <section class="form-order">
+    <section class="form-order container">
       <h2 class="visually-hidden">Форма заказа</h2>
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="form__discription container">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
+
+        <p class="form__discription">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
           заказа и мы
           свяжемся с вами, чтобы уточнить детали.</p>
 
-        <div class="form__wrapper-radio container">
+        <div class="form__wrapper-radio">
           <h3 class="form__title form__title--radio">тип</h3>
           <ul class="form__radio-list">
             <li class="form__radio-item">
-              <label class="form__control">
+              <label class="form__label-radio">
                 <input class="form__input-radio" type="radio" name="choiсe" value="accessory" checked>
-                <span class="form__label">Аксессуар для интерьера</span>
+                <span class="form__custom-radio"></span>
+                <span class="form__label-text">Аксессуар для интерьера</span>
               </label>
             </li>
             <li class="form__radio-item">
-              <label class="form__control">
+              <label class="form__label-radio">
                 <input class="form__input-radio" type="radio" name="choiсe" value="toy">
-                <span class="form__label">Детская игрушка</span>
+                <span class="form__custom-radio"></span>
+                <span class="form__label-text">Детская игрушка</span>
               </label>
             </li>
           </ul>
         </div>
 
-        <div class="form__wrapper-checkbox container">
+        <div class="form__wrapper-checkbox">
           <h3 class="form__title form__title--checkbox">цвет</h3>
           <ul class="form__checkbox-list">
             <li class="form__checkbox-item">
-              <label class="form__control">
+              <label class="form__label-checkbox">
                 <input class="form__input-checkbox" type="checkbox" name="colors" value="white" checked>
-                <span class="form__label">Белый</span>
+                <span class="form__custom-checkbox"></span>
+                <span class="form__label-text">Белый</span>
               </label>
             </li>
             <li class="form__checkbox-item">
-              <label class="form__control">
+              <label class="form__label-checkbox">
                 <input class="form__input-checkbox" type="checkbox" name="colors" value="grey" checked>
-                <span class="form__label">Серый</span>
+                <span class="form__custom-checkbox"></span>
+                <span class="form__label-text">Серый</span>
               </label>
             </li>
             <li class="form__checkbox-item">
-              <label class="form__control">
+              <label class="form__label-checkbox">
                 <input class="form__input-checkbox" type="checkbox" name="colors" value="tiffany">
-                <span class="form__label">Тиффани</span>
+                <span class="form__custom-checkbox"></span>
+                <span class="form__label-text">Тиффани</span>
               </label>
             </li>
             <li class="form__checkbox-item">
-              <label class="form__control">
+              <label class="form__label-checkbox">
                 <input class="form__input-checkbox" type="checkbox" name="colors" value="black">
-                <span class="form__label">Черный</span>
+                <span class="form__custom-checkbox"></span>
+                <span class="form__label-text">Черный</span>
               </label>
             </li>
             <li class="form__checkbox-item">
-              <label class="form__control">
+              <label class="form__label-checkbox">
                 <input class="form__input-checkbox" type="checkbox" name="colors" value="pink">
-                <span class="form__label">Розовый</span>
+                <span class="form__custom-checkbox"></span>
+                <span class="form__label-text">Розовый</span>
               </label>
             </li>
             <li class="form__checkbox-item">
-              <label class="form__control">
+              <label class="form__label-checkbox">
                 <input class="form__input-checkbox" type="checkbox" name="colors" value="orange">
-                <span class="form__label">Оранжевый</span>
+                <span class="form__custom-checkbox"></span>
+                <span class="form__label-text">Оранжевый</span>
               </label>
             </li>
           </ul>
         </div>
 
-        <div class="form__wrapper-initials container">
+        <div class="form__wrapper-initials">
           <h3 class="form__title form__title--initials">фио</h3>
           <div class="form__initials-wrapper">
             <label class="form__control">
@@ -159,7 +168,7 @@
           </div>
         </div>
 
-        <div class="form__wrapper-phone-email container">
+        <div class="form__wrapper-phone-email">
           <div class="form__wrapper-phone">
             <h3 class="form__title form__title--phone">тел</h3>
             <input class="form__input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" aria-label="Телефон">
@@ -167,19 +176,27 @@
 
           <div class="form__wrapper-email">
             <h3 class="form__title form__title--email">e-mail</h3>
-            <input class="form__input" type="email" name="email" placeholder="Ваш Email*" aria-label="Email">
+            <input class="form__input form__input--email" type="email" name="email" placeholder="Ваш Email*"
+              aria-label="Email">
+            <svg class="form__icon-email" width="32" height="21" viewBox="0 0 32 21" fill="black" opacity="0.2"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M28 0H4C1.8 0 0 1.8 0 4V17C0 19.2 1.8 21 4 21H28C30.2 21 32 19.2 32 17V4C32 1.8 30.2 0 28 0ZM2 5.3L9 10.6L2 15.9V5.3ZM30 17C30 18.1 29.1 19 28 19H4C2.9 19 2 18.1 2 17L9.8 11.1L14.2 14.4C14.7 14.8 15.4 15 16 15C16.6 15 17.3 14.8 17.8 14.4L22.2 11.1L30 17ZM30 15.8L23 10.5L30 5.2V15.8ZM17.2 13.6C16.8 13.9 16.4 14 16 14C15.6 14 15.1 13.9 14.8 13.6L10.7 10.5L9.9 9.9L2 4C2 2.9 2.9 2 4 2H28C29.1 2 30 2.9 30 4L17.2 13.6Z" />
+            </svg>
           </div>
         </div>
 
-        <div class="form__wrapper-textarea container">
+        <div class="form__wrapper-textarea">
           <h3 class="form__title form__title--textarea">доп</h3>
           <textarea class="form__textarea" name="message" cols="30" rows="10"
             placeholder="Опишите все ваши пожелания к заказу" aria-label="Текстовое поле для сообщения"></textarea>
         </div>
-        <div class="form__legend-button-wrapper container">
+
+        <div class="form__legend-button-wrapper">
           <span class="form__legend">* Поля обязательны для заполнения</span>
           <button class="form__button-submit button" type="submit">отправить заказ</button>
         </div>
+
       </form>
     </section>
   </main>
