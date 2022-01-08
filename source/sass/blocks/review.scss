@@ -1,3 +1,76 @@
 .review {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding-top: 25px;
   padding-bottom: 45px;
+
+  @media (min-width: $vp--768) {
+    padding-top: 80px;
+    padding-bottom: 47px;
+    background-image: url("../img/review-bg-img.png");
+    background-repeat: no-repeat;
+    background-position-x: -50px;
+    background-size: 350px 457px;
+  }
+
+  @media (min-width: $vp--1150) {
+    background-position-x: 50px;
+    padding-top: 79px;
+    padding-bottom: 96px;
+  }
+}
+
+.review__wrapper {
+  @media (min-width: $vp--768) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (min-width: $vp--1150) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.review__title {
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 14px;
+
+  @media (min-width: $vp--768) {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    justify-self: start;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $vp--1150) {
+    grid-column: 2/-2;
+    grid-row: 1/2;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.review__button {
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 20px;
+  color: $color-charcoal;
+  text-transform: uppercase;
+
+  @media (min-width: $vp--768) {
+    grid-column: 4/-1;
+    grid-row: 1/2;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $vp--1150) {
+    grid-column: 6/-1;
+    grid-row: 1/2;
+  }
 }

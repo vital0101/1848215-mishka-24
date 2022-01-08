@@ -1,0 +1,17 @@
+.button {
+  border: 2px solid $color-charcoal;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(0deg, $color-charcoal, $color-charcoal);
+    mix-blend-mode: normal;
+    color: $color-white;
+  }
+
+  &:active {
+    background: linear-gradient(0deg, $color-charcoal, $color-charcoal);
+    mix-blend-mode: normal;
+    color: rgba($color-white, 0.3);
+  }
+}
