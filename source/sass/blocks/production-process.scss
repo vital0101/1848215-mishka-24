@@ -59,7 +59,6 @@
     @media (min-width: $vp--1150) {
       grid-column: 2/3;
       grid-row: 1/2;
-
     }
   }
 
@@ -68,7 +67,6 @@
     margin: 40px 0 25px 137px;
     width: 100%;
     font-size: 20px;
-    margin: 0;
     margin-bottom: 25px;
   }
 
@@ -98,7 +96,6 @@
   }
 
   @media (min-width: $vp--1150) {
-    width: 683px;
     width: calc(100% + 2px);
     grid-column: 1/2;
     grid-row: 1/4;

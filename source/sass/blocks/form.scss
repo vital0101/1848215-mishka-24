@@ -307,52 +307,52 @@
   border: none;
   background-color: transparent;
 
-    &::placeholder {
-      font-weight: 400;
-      font-size: 17px;
-      line-height: 18px;
-      color: $color-black;
-      opacity: 0.3;
+  &::placeholder {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 18px;
+    color: $color-black;
+    opacity: 0.3;
 
     @media (min-width: $vp--768) {
       font-size: 19px;
     }
   }
 
-    &:hover {
-      box-shadow: inset 0 -2px 0 $color-downy;
-    }
+  &:hover {
+    box-shadow: inset 0 -2px 0 $color-downy;
+  }
 
-    &:hover + .form__icon-phone {
-      fill: $color-downy;
-      opacity: 1;
-    }
+  &:hover + .form__icon-phone {
+    fill: $color-downy;
+    opacity: 1;
+  }
 
-    &:hover + .form__icon-email {
-      fill: $color-downy;
-      opacity: 1;
-    }
+  &:hover + .form__icon-email {
+    fill: $color-downy;
+    opacity: 1;
+  }
 
-    &:active {
-      box-shadow: inset 0 -2px 0 $color-downy;
-    }
+  &:active {
+    box-shadow: inset 0 -2px 0 $color-downy;
+  }
 
-    &:focus-visible {
-      outline: none;
-      box-shadow: inset 0 -2px 0 $color-downy;
-    }
+  &:focus-visible {
+    outline: none;
+    box-shadow: inset 0 -2px 0 $color-downy;
+  }
 
-    &--patronymic {
-      margin-bottom: 0;
-    }
+  &--patronymic {
+    margin-bottom: 0;
+  }
 
-    &--email {
-      margin-bottom: 0;
-    }
+  &--email {
+    margin-bottom: 0;
+  }
 
-    &--name {
-      width: 100%;
-    }
+  &--name {
+    width: 100%;
+  }
 }
 
 .form__wrapper-phone-email {

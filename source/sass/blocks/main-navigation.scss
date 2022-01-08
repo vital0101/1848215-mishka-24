@@ -198,21 +198,18 @@
     // opacity: 0.1;
     border-left: 1px solid $color-black;
   }
-
-  @media (min-width: $vp--1150) {
-  }
 }
 
 .main-navigation__search-icon {
   fill-opacity: 0.2;
 
   &:hover {
-    fill:$color-downy;
+    fill: $color-downy;
     fill-opacity: 1;
   }
 
   &:active {
-    fill:$color-downy;
+    fill: $color-downy;
     fill-opacity: 0.3;
   }
 }
@@ -238,12 +235,12 @@
   fill-opacity: 0.2;
 
   &:hover {
-    fill:$color-downy;
+    fill: $color-downy;
     fill-opacity: 1;
   }
 
   &:active {
-    fill:$color-downy;
+    fill: $color-downy;
     fill-opacity: 0.3;
   }
 }
