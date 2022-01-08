@@ -24,11 +24,11 @@
   }
 
   &:hover {
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   }
 
   &:active {
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -158,9 +158,6 @@
   line-height: 16px;
   font-size: 18px;
   color: $color-charcoal;
-
-  @media (min-width: $vp--768) {
-  }
 
   @media (min-width: $vp--1150) {
     grid-column: 2/3;

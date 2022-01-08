@@ -40,7 +40,10 @@
 
 .about-us__item {
   position: relative;
-  margin-bottom: 30px;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 
   @media (min-width: $vp--768) {
     font-size: 20px;

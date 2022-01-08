@@ -8,7 +8,6 @@
 .form__discription {
   margin: 0;
   padding-bottom: 30px;
-  // width: 655px;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -104,7 +103,7 @@
   width: 100%;
 
   &:last-child {
-   margin-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -113,7 +112,7 @@
 
   &:last-child {
     margin-bottom: 0;
-   }
+  }
 }
 
 .form__label-radio {
@@ -197,12 +196,12 @@
   }
 }
 
-.form__checkbox-item {
+.form__checkbox-item:not(:last-child) {
   margin-bottom: 38px;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
+  // &:last-child {
+  //   margin-bottom: 0;
+  // }
 
   @media (min-width: $vp--768) {
     margin: 0;
@@ -262,6 +261,7 @@
   display: block;
 }
 
+
 .form__wrapper-initials {
   padding-bottom: 30px;
 
@@ -269,9 +269,6 @@
     display: flex;
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-
-  @media (min-width: $vp--1150) {
   }
 }
 
@@ -306,7 +303,7 @@
   padding-left: 0;
   margin-bottom: 20px;
   width: 100%;
-  box-shadow: inset 0px -2px 0px $color-black;
+  box-shadow: inset 0 -2px 0 $color-black;
   border: none;
   background-color: transparent;
 
@@ -317,23 +314,32 @@
       color: $color-black;
       opacity: 0.3;
 
-      @media (min-width: $vp--768) {
-        font-size: 19px;
-      }
+    @media (min-width: $vp--768) {
+      font-size: 19px;
     }
+  }
 
     &:hover {
-      box-shadow: inset 0px -2px 0px $color-downy;
+      box-shadow: inset 0 -2px 0 $color-downy;
     }
-s
-    &:active {
-      box-shadow: inset 0px -2px 0px $color-downy;
 
+    &:hover + .form__icon-phone {
+      fill: $color-downy;
+      opacity: 1;
+    }
+
+    &:hover + .form__icon-email {
+      fill: $color-downy;
+      opacity: 1;
+    }
+
+    &:active {
+      box-shadow: inset 0 -2px 0 $color-downy;
     }
 
     &:focus-visible {
       outline: none;
-      box-shadow: inset 0px -2px 0px $color-downy;
+      box-shadow: inset 0 -2px 0 $color-downy;
     }
 
     &--patronymic {
@@ -344,17 +350,9 @@ s
       margin-bottom: 0;
     }
 
-  // @media (min-width: $vp--768) {
-  //   width: 70%;
-  // }
-
-  @media (min-width: $vp--1150) {
-    // width: 85%;
-
     &--name {
       width: 100%;
     }
-  }
 }
 
 .form__wrapper-phone-email {
@@ -363,37 +361,28 @@ s
     padding-bottom: 50px;
     background-color: $color-white-smoke;
   }
-
-  @media (min-width: $vp--1150) {
-  }
 }
 
 .form__wrapper-phone {
   position: relative;
   padding-bottom: 30px;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 34px;
-    right: 0;
-    width: 25px;
-    height: 24px;
-    background-image: url("../img/phone.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-
-    @media (min-width: $vp--768) {
-      top: 15px;
-    }
-
-    @media (min-width: $vp--1150) {
-      top: 15px;
-    }
-  }
-
   @media (min-width: $vp--768) {
     display: flex;
+  }
+}
+
+.form__icon-phone {
+  position: absolute;
+  top: 32px;
+  right: 20px;
+
+  @media (min-width: $vp--768) {
+    top: 15px;
+  }
+
+  @media (min-width: $vp--1150) {
+    top: 15px;
   }
 }
 
@@ -401,45 +390,24 @@ s
   position: relative;
   padding-bottom: 30px;
 
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   top: 36px;
-  //   right: 0;
-  //   width: 32px;
-  //   height: 21px;
-  //   background-image: url("../img/mail.svg");
-  //   background-repeat: no-repeat;
-  //   background-position: center;
-
-  //   @media (min-width: $vp--768) {
-  //     top: 15px;
-  //   }
-
-  //   @media (min-width: $vp--1150) {
-  //     top: 15px;
-  //   }
-  // }
-
   @media (min-width: $vp--768) {
     display: flex;
     padding-bottom: 0;
   }
 }
 
-// .form__input--email:hover + .form__icon-email {
-//   fill: green;
-//   opacity: 1;
-// }
-
-// .form__input--email:focus-visible {
-//   outline: none;
-// }
-
 .form__icon-email {
   position: absolute;
-  top: 10px;
-  right: 0;
+  top: 32px;
+  right: 20px;
+
+  @media (min-width: $vp--768) {
+    top: 15px;
+  }
+
+  @media (min-width: $vp--1150) {
+    top: 15px;
+  }
 }
 
 .form__wrapper-textarea {

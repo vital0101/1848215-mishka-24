@@ -1,38 +1,65 @@
 .lead {
+  padding-top: 70px;
+  min-height: 355px;
   background-color: $color-white-smoke;
   background-image: url("../img/hero-mobile.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border-top: 1px solid $color-grey;
 
   @media (min-width: $vp--768) {
+    margin-top: -44px;
+    padding-top: 155px;
+    min-height: 758px;
     background-image: url("../img/hero-tablet.png");
   }
 
   @media (min-width: $vp--1150) {
+    margin-top: -67px;
     background-image: url("../img/hero-desktop.png");
   }
 }
 
-.lead__wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: inherit;
-}
+// .lead__wrapper {
+//   display: flex;
+//   flex-direction: column;
+//   min-height: inherit;
+// }
 
 .lead__title {
-  margin-top: 70px;
+  margin: 0;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: $vp--768) {
+    width: 510px;
+    margin: 0 auto;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $vp--1150) {
+    width: 630px;
+    margin: 0 auto;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .lead__link-wrapper {
-  margin-top: auto;
+  margin-top: -70px;
 
   @media (min-width: $vp--768) {
     display: flex;
+    margin-top: -120px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $vp--768) {
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -47,16 +74,44 @@
   padding: 20px 30px;
 
   @media (min-width: $vp--768) {
-    display: inline-block;
     width: 50%;
+    min-height: 119px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   &--interior {
+    position: relative;
     background-color: $color-downy;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      width: 40px;
+      height: 62px;
+      background-image: url("../img/interior.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 
   &--toy {
+    position: relative;
     background-color: $color-puerto-rico;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/toy.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 }
 
