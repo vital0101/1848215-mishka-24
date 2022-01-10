@@ -130,20 +130,31 @@
   margin: 0;
 }
 
-.promo__image {
-  margin-bottom: 20px;
+.promo__image-wrapper {
+  margin: 0;
 
   @media (min-width: $vp--768) {
     grid-column: 3/-1;
     grid-row: 2/-1;
     align-self: end;
-    margin-bottom: 0;
-    min-height: 404px;
   }
 
   @media (min-width: $vp--1150) {
     grid-column: 4/-1;
     grid-row: 1/-1;
+  }
+}
+
+.promo__image {
+  margin-bottom: 20px;
+
+  @media (min-width: $vp--768) {
+    margin-bottom: 0;
+    min-width: 334px;
+  }
+
+  @media (min-width: $vp--1150) {
+    width: 525px;
   }
 }
 

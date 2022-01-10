@@ -43,7 +43,23 @@
   }
 }
 
-.page-footer__logo {
+.page-footer__logo-link {
+  cursor: pointer;
+}
+
+.page-footer__logo-link:hover svg {
+  fill: $color-puerto-rico-light;
+}
+
+.page-footer__logo-link:active svg {
+  fill-opacity: 0.3;
+}
+
+.page-footer__logo-link:focus {
+  outline: 2px solid $color-puerto-rico-light;
+}
+
+.page-footer__logo-icon {
   display: none;
   width: 102px;
   height: 34px;
@@ -61,13 +77,28 @@
 }
 
 .page-footer__copyright {
-  display: flex;
   width: 182px;
-  justify-content: space-between;
+}
+
+.page-footer__copyright-link {
+  display: flex;
+  align-items: center;
+}
+
+.page-footer__copyright-link:hover svg {
+  fill: $color-puerto-rico-light;
+}
+
+.page-footer__copyright-link:active svg {
+  fill-opacity: 0.3;
+}
+
+.page-footer__copyright-link:focus-visible {
+  outline: 2px solid $color-puerto-rico-light;
 }
 
 .page-footer__copyright-text {
+  margin-right: 30px;
   font-size: 19px;
   line-height: 18px;
-  align-self: center;
 }

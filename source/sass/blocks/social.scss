@@ -3,3 +3,16 @@
   margin: 0;
   padding: 0;
 }
+
+.social__link:hover svg {
+  fill: $color-puerto-rico-light
+}
+
+.social__link:active svg {
+  fill-opacity: 0.3;
+}
+
+.social__link:focus {
+  outline: 2px solid $color-puerto-rico-light;
+}
+
