@@ -29,38 +29,21 @@
   }
 }
 
-.main-navigation__logo-image-mobile {
-  @media (min-width: $vp--768) {
-    display: none;
-  }
-
-  @media (min-width: $vp--1150) {
-    display: none;
-  }
-}
-
-.main-navigation__logo-image-tablet {
-  display: none;
+.main-navigation__logo-image {
+  width: 86px;
+  height: 35px;
 
   @media (min-width: $vp--768) {
-    display: block;
     width: 113px;
+    height: 45px;
   }
-
-  @media (min-width: $vp--1150) {
-    display: none;
-  }
-}
-
-.main-navigation__logo-image-desktop {
-  display: none;
-
   @media (min-width: $vp--1150) {
     display: block;
     grid-column: 2/3;
     justify-self: center;
     width: 149px;
-  }
+    height: 72px;
+}
 }
 
 .main-navigation__toggle {
@@ -195,23 +178,22 @@
     width: 88px;
     height: 82px;
     border-right: 1px solid $color-black;
-    // opacity: 0.1;
     border-left: 1px solid $color-black;
   }
 }
 
+.main-navigation__search:hover svg {
+  fill: $color-downy;
+  fill-opacity: 1;
+}
+
+.main-navigation__search:active svg {
+  fill: $color-downy;
+    fill-opacity: 0.3;
+}
+
 .main-navigation__search-icon {
   fill-opacity: 0.2;
-
-  &:hover {
-    fill: $color-downy;
-    fill-opacity: 1;
-  }
-
-  &:active {
-    fill: $color-downy;
-    fill-opacity: 0.3;
-  }
 }
 
 .main-navigation__search-text {
@@ -223,6 +205,7 @@
 .main-navigation__cart {
   display: block;
   line-height: 24px;
+  cursor: pointer;
 
   @media (min-width: $vp--768) {
     display: flex;
@@ -230,29 +213,34 @@
   }
 }
 
+.main-navigation__cart:hover svg {
+  fill: $color-downy;
+  fill-opacity: 1;
+}
+
+.main-navigation__cart:active svg {
+  fill: $color-downy;
+  fill-opacity: 0.3;
+}
+
+.main-navigation__cart:hover span {
+  color: rgba($color-black, 0.6);
+}
+
+.main-navigation__cart:active span {
+  color: rgba($color-black, 0.3);
+}
+
 .main-navigation__cart-icon {
-  margin-right: 30px;
-  fill-opacity: 0.2;
+  fill: rgba($color-black, 0.3);
 
-  &:hover {
-    fill: $color-downy;
-    fill-opacity: 1;
-  }
-
-  &:active {
-    fill: $color-downy;
-    fill-opacity: 0.3;
+  @media (min-width: $vp--768) {
+    margin-right: 40px;
   }
 }
 
 .main-navigation__cart-text {
-  &:hover {
-    color: rgba($color-black, 0.6);
-  }
-
-  &:active {
-    color: rgba($color-black, 0.3);
-  }
+  // margin-right: 30px;
 }
 
 .main-navigation__legend {

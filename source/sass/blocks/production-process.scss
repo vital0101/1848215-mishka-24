@@ -64,7 +64,6 @@
 
   @media (min-width: $vp--768) {
     order: 0;
-    margin: 40px 0 25px 137px;
     width: 100%;
     font-size: 20px;
     margin-bottom: 25px;
@@ -113,6 +112,8 @@
   transform: translate(-50%, -50%);
   width: 100px;
   height: 80px;
+  transition: 0.3s ease;
+  cursor: pointer;
 
   &:hover {
     transform: translate(-50%, -50%) scale(1.2);
