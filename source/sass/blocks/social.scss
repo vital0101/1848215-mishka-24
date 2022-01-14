@@ -5,7 +5,7 @@
 }
 
 .social__link:hover svg {
-  fill: $color-puerto-rico-light
+  fill: $color-puerto-rico-light;
 }
 
 .social__link:active svg {
@@ -15,4 +15,3 @@
 .social__link:focus {
   outline: 2px solid $color-puerto-rico-light;
 }
-

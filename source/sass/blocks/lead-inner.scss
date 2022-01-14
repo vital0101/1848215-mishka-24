@@ -1,0 +1,26 @@
+.lead-inner {
+  display: flex;
+  justify-content: center;
+  padding-top: 73px;
+
+  @media (min-width: $vp--768) {
+    padding-top: 100px;
+  }
+
+  @media (min-width: $vp--1150) {
+    padding-top: 102px;
+  }
+}
+
+.lead-inner__title {
+  margin: 0;
+  margin-bottom: 73px;
+
+  @media (min-width: $vp--768) {
+    margin-bottom: 87px;
+  }
+
+  @media (min-width: $vp--1150) {
+    margin-bottom: 115px;
+  }
+}

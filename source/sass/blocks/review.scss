@@ -7,10 +7,14 @@
   @media (min-width: $vp--768) {
     padding-top: 80px;
     padding-bottom: 47px;
-    background-image: url("../img/review-bg-img.png");
+    background-image: url("../img/bg/review@1x.jpg");
     background-repeat: no-repeat;
     background-position-x: -50px;
     background-size: 350px 457px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg/review@2x.jpg");
+    }
   }
 
   @media (min-width: $vp--1150) {

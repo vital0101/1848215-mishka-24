@@ -8,6 +8,7 @@
     background: linear-gradient(0deg, $color-charcoal, $color-charcoal);
     mix-blend-mode: normal;
     color: $color-white;
+    transition: 0.3s ease;
   }
 
   &:active {

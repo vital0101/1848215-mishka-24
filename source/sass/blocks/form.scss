@@ -1,4 +1,6 @@
 .form {
+  overflow: hidden;
+
   @media (min-width: $vp--1150) {
     padding-left: 60px;
     padding-right: 175px;
@@ -29,22 +31,21 @@
 }
 
 .form__title {
+  position: relative;
   margin: 0;
   margin-bottom: 30px;
   line-height: 16px;
   text-transform: uppercase;
   color: $color-downy;
-  overflow: hidden;
 
   &::after {
     content: "";
-    display: inline-block;
-    width: 100%;
+    position: absolute;
+    width: 100vw;
     height: 1px;
-    vertical-align: middle;
+    top: 50%;
     background-color: $color-downy;
-    border-left: 15px solid $color-white;
-    margin-right: -100%;
+    margin-left: 30px;
 
     @media (min-width: $vp--768) {
       display: none;
@@ -86,6 +87,16 @@
   }
 }
 
+.form__label-text {
+  font-size: 17px;
+  line-height: 18px;
+
+  @media (min-width: $vp--768) {
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
+
 .form__wrapper-radio {
   padding-bottom: 30px;
 
@@ -122,10 +133,10 @@
   cursor: pointer;
 
   @media (min-width: $vp--768) {
-    padding: 12px 12px 12px 78px;
+    padding-left: 78px;
   }
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     top: 0;
@@ -135,46 +146,47 @@
     border-radius: 50px;
     background-color: $color-white;
     box-shadow: inset 0 0 0 2px $color-black,
-    inset 0 0 0 12px $color-white;
+      inset 0 0 0 12px $color-white;
 
     @media (min-width: $vp--768) {
       width: 52px;
       height: 52px;
       box-shadow: inset 0 0 0 2px $color-black,
-      inset 0 0 0 16px $color-white;
+        inset 0 0 0 16px $color-white;
     }
   }
 }
 
 .form__input-radio:checked + .form__label-radio::before {
   background-color: $color-downy;
-  }
+}
 
-  .form__label-radio:hover:before {
+.form__label-radio:hover::before {
+  box-shadow: inset 0 0 0 2px $color-downy,
+    inset 0 0 0 12px $color-white;
+  transition: 0.3s ease;
+
+  @media (min-width: $vp--768) {
     box-shadow: inset 0 0 0 2px $color-downy,
-    inset 0 0 0 12px $color-white;
-
-    @media (min-width: $vp--768) {
-      box-shadow: inset 0 0 0 2px $color-downy,
       inset 0 0 0 16px $color-white;
-    }
   }
+}
 
-  .form__label-radio:active:before {
-    box-shadow: inset 0 0 0 2px rgba($color-black, 0.3),
+.form__label-radio:active::before {
+  box-shadow: inset 0 0 0 2px rgba($color-black, 0.3),
     inset 0 0 0 12px $color-white;
-  }
+}
 
-  .form__input-radio:focus + .form__label-radio::before {
-    outline: none;
+.form__input-radio:focus + .form__label-radio::before {
+  outline: none;
+  box-shadow: inset 0 0 0 2px $color-downy,
+    inset 0 0 0 12px $color-white;
+
+  @media (min-width: $vp--768) {
     box-shadow: inset 0 0 0 2px $color-downy,
-    inset 0 0 0 12px $color-white;
-
-    @media (min-width: $vp--768) {
-      box-shadow: inset 0 0 0 2px $color-downy,
       inset 0 0 0 16px $color-white;
-    }
   }
+}
 
 .form__wrapper-checkbox {
   padding-bottom: 30px;
@@ -199,12 +211,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 24px;
+    width: 75%;
   }
 
   @media (min-width: $vp--1150) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 24px;
+    width: 86%;
   }
 }
 
@@ -222,7 +236,11 @@
   padding: 12px 12px 12px 60px;
   cursor: pointer;
 
-  &:before {
+  @media (min-width: $vp--768) {
+    padding-left: 78px;
+  }
+
+  &::before {
     content: "";
     position: absolute;
     top: 0;
@@ -244,6 +262,7 @@
   }
 }
 
+
 .form__input-checkbox {
   position: absolute;
   appearance: none;
@@ -251,13 +270,15 @@
 
 .form__input-checkbox:checked + .form__label-checkbox::before {
   background-image: url("../img/tick.svg");
+  transition: 0.3s ease;
 }
 
-.form__input-checkbox:hover + .form__label-checkbox:before {
+.form__input-checkbox:hover + .form__label-checkbox::before {
   border-color: $color-downy;
+  transition: 0.3s ease;
 }
 
-.form__input-checkbox:active + .form__label-checkbox:before {
+.form__input-checkbox:active + .form__label-checkbox::before {
   border-color: rgba($color-black, 0.3);
 }
 
@@ -279,10 +300,10 @@
   @media (min-width: $vp--768) {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 75%;
 
     @media (min-width: $vp--1150) {
-      width: 100%;
+      width: 86%;
     }
   }
 }
@@ -304,15 +325,28 @@
 .form__input {
   padding: 17px;
   padding-left: 0;
+  padding-right: 80px;
   margin-bottom: 20px;
   width: 100%;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 18px;
+  color: $color-charcoal;
   box-shadow: inset 0 -2px 0 $color-black;
   border: none;
   background-color: transparent;
 
+  @media (min-width: $vp--768) {
+    width: 75%;
+  }
+
+  @media (min-width: $vp--1150) {
+    width: 86%;
+  }
+
   &::placeholder {
     font-weight: 400;
-    font-size: 17px;
+    font-size: 19px;
     line-height: 18px;
     color: $color-black;
     opacity: 0.3;
@@ -324,6 +358,7 @@
 
   &:hover {
     box-shadow: inset 0 -2px 0 $color-downy;
+    transition: 0.3s ease;
   }
 
   &:hover + .form__icon-phone {
@@ -338,11 +373,25 @@
 
   &:active {
     box-shadow: inset 0 -2px 0 $color-downy;
+    transition: 0.3s ease;
   }
 
   &:focus-visible {
     outline: none;
     box-shadow: inset 0 -2px 0 $color-downy;
+    transition: 0.3s ease;
+  }
+
+  &:focus-visible + .form__icon-phone {
+    fill: $color-downy;
+    opacity: 1;
+    transition: 0.3s ease;
+  }
+
+  &:focus-visible + .form__icon-email {
+    fill: $color-downy;
+    opacity: 1;
+    transition: 0.3s ease;
   }
 
   &--patronymic {
@@ -431,6 +480,18 @@
   min-height: 142px;
   padding: 17px;
   border: 2px solid $color-charcoal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 18px;
+  color: $color-black;
+
+  @media (min-width: $vp--768) {
+    width: 75%;
+  }
+
+  @media (min-width: $vp--1150) {
+    width: 86%;
+  }
 
   &::placeholder {
     font-weight: 400;
@@ -446,6 +507,7 @@
 
   &:hover {
     border: 2px solid $color-downy;
+    transition: 0.3s ease;
   }
 
   &:active {

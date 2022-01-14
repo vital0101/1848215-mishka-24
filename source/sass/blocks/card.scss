@@ -22,24 +22,6 @@
   }
 }
 
-.card__image-mobile {
-  @media (min-width: $vp--768) {
-    display: none;
-  }
-}
-
-.card__image-tablet {
-  display: none;
-
-  @media (min-width: $vp--768) {
-    display: block;
-  }
-
-  @media (min-width: $vp--1150) {
-    display: none;
-  }
-}
-
 .card__image-desktop {
   display: none;
 
@@ -69,10 +51,12 @@
 
   &:hover {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
   }
 
   &:active {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
   }
 }
 
@@ -92,10 +76,12 @@
 
   &:hover {
     color: rgba($color-black, 0.6);
+    transition: 0.3s ease;
   }
 
   &:active {
     color: rgba($color-black, 0.3);
+    transition: 0.3s ease;
   }
 }
 
@@ -129,10 +115,12 @@
   &:hover {
     fill: $color-downy;
     fill-opacity: 1;
+    transition: 0.3s ease;
   }
 
   &:active {
     fill: $color-downy;
     fill-opacity: 0.3;
+    transition: 0.3s ease;
   }
 }
