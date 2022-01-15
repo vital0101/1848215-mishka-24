@@ -11,61 +11,61 @@
 
 <body class="page-body">
   <section class="intro">
-    <h1 class="visually-hidden">Форма обратной связи</h1>
+    <h1 class="visually-hidden">Главная страница</h1>
     <header class="page-header">
-      <div class="container">
-        <nav class="page-header__main-navigation main-navigation">
-          <a class="main-navigation__logo-link" href="index.html" aria-label="Главная страница.">
-            <picture>
-              <source media="(min-width: 1150px)" srcset="./img/mishka-logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="./img/mishka-logo-tablet.svg">
-              <img class="main-navigation__logo-image" src="./img/mishka-logo-mobile.svg" alt="Логотип магазина Мишка."
-                width="86" height="35">
-            </picture>
+      <a class="page-header__logo-link page-header__logo-link--active" href="index.html" aria-label="Главная страница.">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="./img/mishka-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="./img/mishka-logo-tablet.svg">
+          <img class="page-header__logo-image" src="./img/mishka-logo-mobile.svg" alt="Логотип магазина Мишка."
+            width="86" height="35">
+        </picture>
+      </a>
+      <button class="page-header__button button-toggle-menu button-toggle-menu--closed" type="button"
+        aria-label="Открыть/закрыть меню.">
+      </button>
+      <nav class="main-navigation main-navigation--closed main-navigation--no-js">
+        <ul class="main-navigation__list main-navigation__list-top">
+          <li class="main-navigation__item-top">
+            <a class="main-navigation__link-top" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="main-navigation__item-top">
+            <a class="main-navigation__link-top" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <div class="main-navigation__user">
+          <a class="main-navigation__search" href="#" aria-label="Поиск по сайту.">
+            <svg class="main-navigation__search-icon" width="18" height="18" viewBox="0 0 18 18" fill="black"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17.6932 16.0568L14.2159 12.5795C15.2386 11.25 15.75 9.61364 15.75 7.875C15.75 3.47727 12.2727 0 7.875 0C3.47727 0 0 3.47727 0 7.875C0 12.2727 3.47727 15.75 7.875 15.75C9.61364 15.75 11.25 15.1364 12.5795 14.2159L16.0568 17.6932C16.2614 17.8977 16.4659 18 16.875 18C17.4886 18 18 17.4886 18 16.875C18 16.6705 17.8977 16.3636 17.6932 16.0568ZM2.25 7.875C2.25 4.80682 4.80682 2.25 7.875 2.25C10.9432 2.25 13.5 4.80682 13.5 7.875C13.5 10.9432 10.9432 13.5 7.875 13.5C4.80682 13.5 2.25 10.9432 2.25 7.875Z" />
+            </svg>
+            <span class="main-navigation__search-text">Поиск по сайту</span>
           </a>
-          <button class="main-navigation__toggle" type="button" aria-label="Открыть/закрыть меню.">
-            <span class="main-navigation__toggle-gamburger"></span>
-          </button>
-          <ul class="main-navigation__list">
-            <li class="main-navigation__item">
-              <a class="main-navigation__link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="main-navigation__item">
-              <a class="main-navigation__link" href="#">Вязание на заказ</a>
-            </li>
-            <li class="main-navigation__item main-navigation__item--hidden">
-              <a class="main-navigation__link" href="#">Новые поступления</a>
-            </li>
-            <li class="main-navigation__item main-navigation__item--hidden">
-              <a class="main-navigation__link" href="#">Распродажа</a>
-            </li>
-          </ul>
-          <div class="main-navigation__user">
-            <a class="main-navigation__search" href="#" aria-label="Поиск по сайту.">
-              <svg class="main-navigation__search-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.2"
-                  d="M17.6932 16.0568L14.2159 12.5795C15.2386 11.25 15.75 9.61364 15.75 7.875C15.75 3.47727 12.2727 0 7.875 0C3.47727 0 0 3.47727 0 7.875C0 12.2727 3.47727 15.75 7.875 15.75C9.61364 15.75 11.25 15.1364 12.5795 14.2159L16.0568 17.6932C16.2614 17.8977 16.4659 18 16.875 18C17.4886 18 18 17.4886 18 16.875C18 16.6705 17.8977 16.3636 17.6932 16.0568ZM2.25 7.875C2.25 4.80682 4.80682 2.25 7.875 2.25C10.9432 2.25 13.5 4.80682 13.5 7.875C13.5 10.9432 10.9432 13.5 7.875 13.5C4.80682 13.5 2.25 10.9432 2.25 7.875Z"
-                  fill="black" />
-              </svg>
-              Поиск по сайту
-            </a>
-            <a class="main-navigation__cart" href="#" aria-label="Корзина.">
-              <svg class="main-navigation__cart-icon" width="21" height="18" viewBox="0 0 21 18" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.2"
-                  d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z"
-                  fill="black" />
-              </svg>
-              Корзина: пока пуста
-            </a>
-          </div>
-          <p class="main-navigation__legend">Бесплатная доставка по России</p>
-        </nav>
-      </div>
+          <a class="main-navigation__cart" href="#" aria-label="Корзина.">
+            <svg class="main-navigation__cart-icon" width="21" height="18" viewBox="0 0 21 18" fill="black"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.1884 6.85716H16.6377L13.1884 0.380944C12.9855 -8.61287e-06 12.5797 -0.0952351 12.1739 0.0952412C11.7681 0.285717 11.6667 0.66667 11.8696 1.04762L15.0145 6.85716H5.7826L8.92753 1.04762C9.13043 0.66667 8.92754 0.285717 8.6232 0.0952412C8.2174 -0.0952351 7.8116 0.0952295 7.6087 0.380944L4.1594 6.85716H0.811583C0.405785 6.85716 0 7.14286 0 7.61905C0 8 0.304336 8.38094 0.811583 8.38094H1.01449L1.92753 11.2381C1.72463 11.3333 1.62317 11.5238 1.62317 11.8095C1.62317 12.1905 1.92753 12.4762 2.33332 12.4762L4.05797 18H16.942L18.6667 12.4762C19.0725 12.4762 19.3768 12.1905 19.3768 11.8095C19.3768 11.619 19.2754 11.3333 19.0725 11.2381L19.9855 8.38094H20.1884C20.5942 8.38094 21 8.09524 21 7.61905C21 7.14286 20.5942 6.85716 20.1884 6.85716ZM15.6232 16.4762H5.07247L3.85506 12.381H16.942L15.6232 16.4762ZM17.2464 10.9524H3.34782L2.53623 8.28573H18.058L17.2464 10.9524Z" />
+            </svg>
+            <span class="main-navigation__cart-text">Корзина: пока пуста</span>
+          </a>
+        </div>
+        <ul class="main-navigation__list main-navigation__list-bottom main-navigation__list--hidden">
+          <li class="main-navigation__item-bottom">
+            <a class="main-navigation__link-bottom" href="#">Новые поступления</a>
+          </li>
+          <li class="main-navigation__item-bottom">
+            <a class="main-navigation__link-bottom" href="#">Распродажа</a>
+          </li>
+        </ul>
+        <p class="main-navigation__legend">Бесплатная доставка по России</p>
+      </nav>
     </header>
-    <section class="inner-lead container">
-      <h2 class="inner-lead__title">Вязание на заказ</h2>
+    <section class="lead-inner">
+      <div class="container">
+        <h2 class="lead-inner__title">Вязание на заказ</h2>
+      </div>
     </section>
   </section>
 
@@ -142,18 +142,18 @@
           <h3 class="form__title form__title--initials">фио</h3>
           <div class="form__initials-wrapper">
             <label class="form__control">
-              <span class="form__label-text">Имя:</span>
+              <span class="form__label-text form__label-text--name">Имя:</span>
               <input class="form__input form__input--name" type="text" name="user-name" placeholder="Введите ваше имя*">
             </label>
 
             <label class="form__control">
-              <span class="form__label-text">Фамилия:</span>
+              <span class="form__label-text form__label-text--surname">Фамилия:</span>
               <input class="form__input form__input--surname" type="text" name="user-surname"
                 placeholder="Укажите фамилию*">
             </label>
 
             <label class="form__control">
-              <span class="form__label-text">Отчество:</span>
+              <span class="form__label-text form__label-text--patronymic">Отчество:</span>
               <input class="form__input form__input--patronymic" type="text" name="user-patronymic"
                 placeholder="Отчество, если желаете">
             </label>
@@ -163,7 +163,8 @@
         <div class="form__wrapper-phone-email bg-color">
           <div class="form__wrapper-phone">
             <h3 class="form__title form__title--phone">тел</h3>
-            <input class="form__input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" aria-label="Телефон">
+            <input class="form__input form__input--phone" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+              aria-label="Телефон">
             <svg class="form__icon-phone" width="25" height="24" viewBox="0 0 25 24" fill="black" opacity="0.2"
               xmlns="http://www.w3.org/2000/svg">
               <g>
@@ -189,6 +190,7 @@
                 d="M28 0H4C1.8 0 0 1.8 0 4V17C0 19.2 1.8 21 4 21H28C30.2 21 32 19.2 32 17V4C32 1.8 30.2 0 28 0ZM2 5.3L9 10.6L2 15.9V5.3ZM30 17C30 18.1 29.1 19 28 19H4C2.9 19 2 18.1 2 17L9.8 11.1L14.2 14.4C14.7 14.8 15.4 15 16 15C16.6 15 17.3 14.8 17.8 14.4L22.2 11.1L30 17ZM30 15.8L23 10.5L30 5.2V15.8ZM17.2 13.6C16.8 13.9 16.4 14 16 14C15.6 14 15.1 13.9 14.8 13.6L10.7 10.5L9.9 9.9L2 4C2 2.9 2.9 2 4 2H28C29.1 2 30 2.9 30 4L17.2 13.6Z" />
             </svg>
           </div>
+
         </div>
 
         <div class="form__wrapper-textarea">
@@ -208,7 +210,8 @@
 
   <footer class="page-footer">
     <div class="page-footer__wrapper container">
-      <a class="page-footer__logo-link" href="index.html" aria-label="Ссылка на главную страницу">
+      <a class="page-footer__logo-link page-footer__logo-link--active" href="index.html"
+        aria-label="Ссылка на главную страницу">
         <svg class="page-footer__logo-icon" width="102" height="34" viewBox="0 0 102 34" fill="black"
           xmlns="http://www.w3.org/2000/svg">
           <path
@@ -272,5 +275,27 @@
     </div>
   </footer>
 </body>
+
+<script>
+  const navMain = document.querySelector('.main-navigation');
+  const navToggle = document.querySelector('.button-toggle-menu');
+
+  navMain.classList.remove('main-navigation--no-js');
+
+  navToggle.addEventListener('click', function () {
+    if (navMain.classList.contains('main-navigation--closed') &
+      navToggle.classList.contains('button-toggle-menu--closed')) {
+      navMain.classList.remove('main-navigation--closed');
+      navMain.classList.add('main-navigation--opened');
+      navToggle.classList.remove('button-toggle-menu--closed');
+      navToggle.classList.add('button-toggle-menu--opened');
+    } else {
+      navMain.classList.add('main-navigation--closed');
+      navMain.classList.remove('main-navigation--opened');
+      navToggle.classList.add('button-toggle-menu--closed');
+      navToggle.classList.remove('button-toggle-menu--opened');
+    }
+  });
+</script>
 
 </html>

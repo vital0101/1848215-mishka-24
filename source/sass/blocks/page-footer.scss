@@ -44,19 +44,21 @@
 }
 
 .page-footer__logo-link {
-  cursor: pointer;
-}
+  &--active {
+    cursor: pointer;
 
-.page-footer__logo-link:hover svg {
-  fill: $color-puerto-rico-light;
-}
+    &:hover svg {
+      fill: $color-puerto-rico-light;
+    }
 
-.page-footer__logo-link:active svg {
-  fill-opacity: 0.3;
-}
+    &:active svg {
+      fill-opacity: 0.3;
+    }
 
-.page-footer__logo-link:focus {
-  outline: 2px solid $color-puerto-rico-light;
+    &:focus {
+      outline: 2px solid $color-puerto-rico-light;
+    }
+  }
 }
 
 .page-footer__logo-icon {
