@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 38px;
+  padding-top: 44px;
   padding-bottom: 39px;
 
   @media (min-width: $vp--768) {
@@ -78,6 +78,7 @@
 .contacts__list {
   display: flex;
   margin: 0;
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
@@ -95,7 +96,7 @@
 }
 
 .contacts__item {
-  width: 64px;
+  width: 77px;
 
   @media (min-width: $vp--1150) {
     width: 82px;
@@ -121,7 +122,7 @@
 .contacts__map-image {
   width: calc(100% + 60px);
   margin-left: -30px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   height: 454px;
 
   @media (min-width: $vp--768) {
@@ -142,8 +143,8 @@
   grid-column: 2/3;
   justify-self: center;
   display: block;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   width: 100%;
   text-align: center;
   font-size: 18px;

@@ -1,6 +1,6 @@
 .intro {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   background-color: $color-white-smoke;
 
   @media (min-width: $vp--768) {
@@ -33,7 +33,7 @@
   &--bg-image {
     background-image: url("../img/bg/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 50% 78px;
+    background-position: 50% 62px;
     background-clip: border-box;
 
     @media (min-resolution: 2dppx) {

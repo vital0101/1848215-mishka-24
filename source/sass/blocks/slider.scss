@@ -1,5 +1,5 @@
 .slider {
-  margin-bottom: 38px;
+  margin-bottom: 37px;
 
   @media (min-width: $vp--768) {
     display: grid;
@@ -15,7 +15,7 @@
 }
 
 .slider__list {
-  margin-bottom: 38px;
+  margin-bottom: 29px;
 
   @media (min-width: $vp--768) {
     grid-column: 1/-1;
@@ -30,11 +30,12 @@
 
 .slider__item {
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .slider__text {
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 32px;
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
@@ -46,6 +47,8 @@
 }
 
 .slider__author-info {
+  display: block;
+  padding-bottom: 3px;
   font-style: initial;
   font-size: 17px;
   line-height: 24px;
@@ -63,7 +66,6 @@
   position: relative;
   display: flex;
   text-align: center;
-  margin-bottom: 20px;
   border: 1px solid $color-whispen;
 
   &::before {

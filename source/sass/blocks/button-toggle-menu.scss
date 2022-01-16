@@ -23,10 +23,10 @@
     position: absolute;
     width: 20px;
     height: 2px;
-    top: 20px;
-    right: 0;
+    top: 18px;
+    right: 1px;
     background-color: $color-black;
-    box-shadow: 0 -4px 0 0 $color-black, 0 4px 0 0 $color-black;
+    box-shadow: 0 -6px 0 0 $color-black, 0 6px 0 0 $color-black;
   }
 
   &--opened::before {

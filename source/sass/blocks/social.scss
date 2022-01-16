@@ -4,14 +4,14 @@
   padding: 0;
 }
 
-.social__link:hover svg {
+.social__link:hover .social__icon {
   fill: $color-puerto-rico-light;
 }
 
-.social__link:active svg {
+.social__link:active .social__icon {
   fill-opacity: 0.3;
 }
 
-.social__link:focus {
+.social__link:focus-visible {
   outline: 2px solid $color-puerto-rico-light;
 }
