@@ -16,4 +16,7 @@
     mix-blend-mode: normal;
     color: rgba($color-white, 0.3);
   }
+
+  &:focus-visible {
+  }
 }

@@ -137,6 +137,7 @@
     grid-column: 3/-1;
     grid-row: 2/-1;
     align-self: end;
+    margin-bottom: 0;
   }
 
   @media (min-width: $vp--1150) {
@@ -148,11 +149,6 @@
 .promo__image {
   @media (min-width: $vp--768) {
     margin-bottom: 0;
-    min-width: 334px;
-  }
-
-  @media (min-width: $vp--1150) {
-    width: 525px;
   }
 }
 
