@@ -33,7 +33,7 @@
 .card-discription__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 28px 28px 26px;
+  padding: 28px 27px 26px;
   min-height: 174px;
   border: 1px solid $color-whispen;
 
@@ -88,7 +88,6 @@
 
 .card__discription {
   display: block;
-  margin-bottom: auto;
   font-size: 13px;
   line-height: 30px;
   font-weight: 400;
@@ -99,7 +98,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: auto;
-  padding-top: 20px;
+  padding-top: 17px;
   border-top: 1px solid $color-whispen;
 }
 

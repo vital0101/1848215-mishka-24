@@ -42,6 +42,7 @@
   color: $color-charcoal;
 
   @media (min-width: $vp--768) {
+    margin-bottom: 61px;
     font-size: 17px;
   }
 }
@@ -53,6 +54,10 @@
   font-size: 17px;
   line-height: 24px;
   color: $color-black;
+
+  @media (min-width: $vp--768) {
+    font-size: 18px;
+  }
 }
 
 .slider__author-contact {
@@ -86,7 +91,7 @@
     grid-column: 4/-1;
     grid-row: 2/3;
     align-self: end;
-    margin-bottom: 0;
+    margin-bottom: 21px;
     border: none;
   }
 

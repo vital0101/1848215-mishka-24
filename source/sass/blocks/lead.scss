@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $vp--1150) {
-    padding-top: 114px;
+    padding-top: 97px;
   }
 }
 
@@ -28,7 +28,7 @@
   @media (min-width: $vp--1150) {
     width: 630px;
     margin: 0 auto;
-    margin-bottom: 355px;
+    margin-bottom: 354px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -77,7 +77,6 @@
   &--interior {
     position: relative;
     background-color: $color-downy;
-    overflow: hidden;
 
     &::after {
       content: "";
@@ -90,6 +89,10 @@
       background-repeat: no-repeat;
       background-position: center;
       opacity: 0.7;
+
+      @media (min-width: $vp--768) {
+        top: 31px;
+      }
     }
 
     &:hover::after {
@@ -126,7 +129,6 @@
   &--toy {
     position: relative;
     background-color: $color-puerto-rico;
-    overflow: hidden;
 
     &::after {
       content: "";
@@ -139,6 +141,11 @@
       background-repeat: no-repeat;
       background-position: center;
       opacity: 0.7;
+
+      @media (min-width: $vp--768) {
+        top: 32px;
+        right: 34px;
+      }
     }
 
     &:hover::after {

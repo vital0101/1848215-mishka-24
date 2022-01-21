@@ -75,7 +75,6 @@
 }
 
 .main-navigation__item-top {
-  padding: 28px 0 28px 76px;
   border-bottom: 1px solid $color-black;
 
   @media (min-width: $vp--768) {
@@ -97,6 +96,7 @@
 
 .main-navigation__link-top {
   display: block;
+  padding: 28px 0 28px 76px;
   font-size: 17px;
   line-height: 24px;
 
@@ -127,6 +127,7 @@
 
 .main-navigation__link-bottom {
   display: block;
+  padding: 28px 0 28px 76px;
   font-size: 17px;
   line-height: 24px;
 

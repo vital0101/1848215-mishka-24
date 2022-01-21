@@ -11,7 +11,7 @@
     top: 0;
     left: 0;
     background-color: $color-white;
-    border-bottom: 2px solid $color-whispen;
+    border-bottom: 1px solid $color-whispen;
     z-index: -1;
 
     @media (min-width: $vp--768) {
@@ -87,6 +87,6 @@
 .page-header__button {
   position: absolute;
   top: 14px;
-  right: 30px;
+  right: 16px;
   padding: 0;
 }

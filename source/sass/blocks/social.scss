@@ -4,6 +4,18 @@
   padding: 0;
 }
 
+.social__link {
+  &--insta {
+    display: block;
+    padding-top: 3px;
+  }
+
+  &--twitter {
+    display: block;
+    padding-top: 4px;
+  }
+}
+
 .social__link:hover .social__icon {
   fill: $color-puerto-rico-light;
 }

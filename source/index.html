@@ -6,7 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка</title>
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/favicons-32x32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body class="page-body">
@@ -99,6 +104,12 @@
         </div>
         <div class="promo__image-wrapper">
           <picture>
+            <!-- <source type="image/webp" media="(min-width: 1150px)"
+              srcset="./img/content/big-cart-desktop@1x.webp 1x, ./img/content/big-cart-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="./img/content/big-cart-tablet@1x.webp 1x, ./img/content/big-cart-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/content/big-cart-mobile@1x.webp,
+            ./img/content/big-cart-mobile@2x.webp 2x"> -->
             <source media="(min-width: 1150px)"
               srcset="./img/content/big-cart-desktop@1x.jpg 1x, ./img/content/big-cart-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
@@ -220,21 +231,21 @@
       </a>
       <ul class="page-footer__social social">
         <li class="social__item">
-          <a href="#" class="social__link" aria-label="Мы в инстаграмме.">
-            <svg class="social__icon" width="22" height="22">
+          <a href="#" class="social__link social__link--insta" aria-label="Мы в инстаграмме.">
+            <svg class="social__icon " width="22" height="22">
               <use href="img/sprite/sprite.svg#insta"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__link" aria-label="Мы в фейсбуке.">
+          <a href="#" class="social__link social__link--fb" aria-label="Мы в фейсбуке.">
             <svg class="social__icon" width="15" height="28">
               <use href="img/sprite/sprite.svg#fb"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__link" aria-label="Мы в твиттере.">
+          <a href="#" class="social__link social__link--twitter" aria-label="Мы в твиттере.">
             <svg class="social__icon" width="23" height="20">
               <use href="img/sprite/sprite.svg#twitter"></use>
             </svg>

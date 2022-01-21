@@ -1,7 +1,8 @@
 .lead-inner {
   display: flex;
   justify-content: center;
-  padding-top: 73px;
+  padding-top: 72px;
+
 
   @media (min-width: $vp--768) {
     padding-top: 100px;
@@ -15,6 +16,8 @@
 .lead-inner__title {
   margin: 0;
   margin-bottom: 73px;
+  font-size: 27px;
+  line-height: 30px;
 
   @media (min-width: $vp--768) {
     margin-bottom: 87px;
