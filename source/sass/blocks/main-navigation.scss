@@ -1,8 +1,8 @@
 .main-navigation {
-  top: 79px;
+  top: 80px;
   left: 0;
   width: 100%;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid $color-whispen;
   background-color: $color-white;
 
   &--no-js {
@@ -75,7 +75,7 @@
 }
 
 .main-navigation__item-top {
-  border-bottom: 1px solid $color-black;
+  border-bottom: 1px solid $color-whispen;
 
   @media (min-width: $vp--768) {
     border-bottom: none;
@@ -137,7 +137,8 @@
   }
 
   @media (min-width: $vp--1150) {
-    padding: 19px 54px 19px 0;
+    margin-right: 27px;
+    padding: 19px 27px 19px 0;
     font-size: 15px;
     line-height: 24px;
   }
@@ -181,7 +182,7 @@
   align-items: center;
   line-height: 24px;
   padding: 28px 0 28px 32px;
-  border-bottom: 1px solid $color-black;
+  border-bottom: 1px solid $color-whispen;
 
   @media (min-width: $vp--768) {
     display: flex;
