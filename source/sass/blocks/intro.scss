@@ -1,6 +1,6 @@
 .intro {
   position: relative;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
   background-color: $color-snow;
 
   @media (min-width: $vp--768) {
@@ -18,7 +18,7 @@
   }
 
   @media (min-width: $vp--1150) {
-    margin-bottom: 71px;
+    // margin-bottom: 71px;
 
     &::after {
       content: "";
