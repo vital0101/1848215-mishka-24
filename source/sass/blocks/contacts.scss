@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 38px;
+  padding-top: 39px;
   padding-bottom: 39px;
 
   @media (min-width: $vp--768) {
@@ -19,7 +19,7 @@
       width: 47px;
       height: 81px;
       top: 0;
-      right: 50px;
+      right: 53px;
       background-image: url("../img/flag.svg");
       background-repeat: no-repeat;
       background-position: center;
@@ -65,6 +65,7 @@
 
   @media (min-width: $vp--768) {
     display: flex;
+    margin-bottom: 19px;
   }
 
   @media (min-width: $vp--1150) {
@@ -78,6 +79,7 @@
 .contacts__list {
   display: flex;
   margin: 0;
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
@@ -95,7 +97,7 @@
 }
 
 .contacts__item {
-  width: 64px;
+  width: 77px;
 
   @media (min-width: $vp--1150) {
     width: 82px;
@@ -107,6 +109,7 @@
 }
 
 .contacts__link-email {
+  padding-bottom: 4px;
   border-bottom: 1px solid $color-downy;
 
   &:hover {
@@ -121,12 +124,13 @@
 .contacts__map-image {
   width: calc(100% + 60px);
   margin-left: -30px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   height: 454px;
 
   @media (min-width: $vp--768) {
     width: calc(100% + 100px);
     margin-left: -50px;
+    margin-bottom: 55px;
   }
 
   @media (min-width: $vp--1150) {
@@ -142,8 +146,8 @@
   grid-column: 2/3;
   justify-self: center;
   display: block;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   width: 100%;
   text-align: center;
   font-size: 18px;
@@ -154,6 +158,7 @@
   @media (min-width: $vp--768) {
     width: 230px;
     margin: 0 auto;
+    font-size: 17px;
   }
 
   @media (min-width: $vp--1150) {

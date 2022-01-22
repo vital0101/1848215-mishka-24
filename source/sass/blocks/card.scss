@@ -22,24 +22,6 @@
   }
 }
 
-.card__image-mobile {
-  @media (min-width: $vp--768) {
-    display: none;
-  }
-}
-
-.card__image-tablet {
-  display: none;
-
-  @media (min-width: $vp--768) {
-    display: block;
-  }
-
-  @media (min-width: $vp--1150) {
-    display: none;
-  }
-}
-
 .card__image-desktop {
   display: none;
 
@@ -48,16 +30,16 @@
   }
 }
 
-.card-discription__wrapper {
+.card__discription-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 28px 28px 26px;
-  min-height: 174px;
+  padding: 28px 27px 24px;
+  min-height: 178px;
   border: 1px solid $color-whispen;
 
   @media (min-width: $vp--768) {
     width: 50%;
-    padding: 25px 34px;
+    padding: 27px 32px 24px;
   }
 
   @media (min-width: $vp--1150) {
@@ -69,11 +51,17 @@
 
   &:hover {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
   }
 
   &:active {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
   }
+}
+
+.card__title-link {
+  align-self: flex-start;
 }
 
 .card__title {
@@ -83,39 +71,50 @@
   line-height: 24px;
 
   @media (min-width: $vp--768) {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
+    font-size: 20px;
   }
 
   &:hover {
     color: rgba($color-black, 0.6);
+    transition: 0.3s ease;
   }
 
   &:active {
     color: rgba($color-black, 0.3);
+    transition: 0.3s ease;
   }
 }
 
 
 .card__discription {
   display: block;
-  margin-bottom: auto;
+  margin-bottom: 17px;
   font-size: 13px;
   line-height: 30px;
   font-weight: 400;
   color: $color-charcoal;
+
+  @media (min-width: $vp--768) {
+    font-size: 15px;
+  }
 }
 
 .card__price-wrapper {
   display: flex;
   justify-content: space-between;
   margin-top: auto;
-  padding-top: 20px;
+  padding-top: 23px;
   border-top: 1px solid $color-whispen;
 }
 
 .card__price {
   font-size: 15px;
   line-height: 24px;
+
+  @media (min-width: $vp--768) {
+    font-size: 17px;
+  }
 }
 
 .card__cart-image {
@@ -125,10 +124,12 @@
   &:hover {
     fill: $color-downy;
     fill-opacity: 1;
+    transition: 0.3s ease;
   }
 
   &:active {
     fill: $color-downy;
     fill-opacity: 0.3;
+    transition: 0.3s ease;
   }
 }

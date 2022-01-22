@@ -1,5 +1,5 @@
 .slider {
-  margin-bottom: 38px;
+  margin-bottom: 37px;
 
   @media (min-width: $vp--768) {
     display: grid;
@@ -15,7 +15,7 @@
 }
 
 .slider__list {
-  margin-bottom: 38px;
+  margin-bottom: 29px;
 
   @media (min-width: $vp--768) {
     grid-column: 1/-1;
@@ -30,26 +30,34 @@
 
 .slider__item {
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .slider__text {
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 32px;
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
   color: $color-charcoal;
 
   @media (min-width: $vp--768) {
+    margin-bottom: 61px;
     font-size: 17px;
   }
 }
 
 .slider__author-info {
+  display: block;
+  padding-bottom: 3px;
   font-style: initial;
   font-size: 17px;
   line-height: 24px;
   color: $color-black;
+
+  @media (min-width: $vp--768) {
+    font-size: 18px;
+  }
 }
 
 .slider__author-contact {
@@ -63,7 +71,6 @@
   position: relative;
   display: flex;
   text-align: center;
-  margin-bottom: 20px;
   border: 1px solid $color-whispen;
 
   &::before {
@@ -84,7 +91,7 @@
     grid-column: 4/-1;
     grid-row: 2/3;
     align-self: end;
-    margin-bottom: 0;
+    margin-bottom: 21px;
     border: none;
   }
 
@@ -104,11 +111,16 @@
   cursor: pointer;
 
   &:hover {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   &:active {
     opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $color-black;
+    opacity: 0.6;
   }
 }
 
@@ -124,10 +136,15 @@
   cursor: pointer;
 
   &:hover {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   &:active {
     opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $color-black;
+    opacity: 0.6;
   }
 }
