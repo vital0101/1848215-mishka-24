@@ -59,12 +59,16 @@
   &--active {
     cursor: pointer;
 
-    &:hover {
+    &:hover img {
       opacity: 0.6;
     }
 
-    &:active {
+    &:active img {
       opacity: 0.3;
+    }
+
+    &:focus-visible {
+      outline: 1px solid;
     }
   }
 }

@@ -1,4 +1,10 @@
 .cards {
+  padding-top: 32px;
+
+  @media (min-width: $vp--768) {
+    padding-top: 80px;
+  }
+
   @media (min-width: $vp--1150) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -8,10 +14,11 @@
 }
 
 .cards__item {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 
   @media (min-width: $vp--768) {
     min-height: 335px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: $vp--1150) {

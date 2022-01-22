@@ -323,8 +323,8 @@
 .form__input {
   padding: 17px;
   padding-left: 0;
-  padding-right: 80px;
-  margin-bottom: 20px;
+  padding-right: 17px;
+  margin-bottom: 17px;
   width: 100%;
   font-weight: 400;
   font-size: 19px;
@@ -350,7 +350,7 @@
     opacity: 0.3;
 
     @media (min-width: $vp--768) {
-      font-size: 19px;
+      font-size: 17px;
     }
   }
 

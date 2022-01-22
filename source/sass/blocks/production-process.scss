@@ -36,7 +36,7 @@
 .production-process__title {
   position: relative;
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
   margin-left: 32px;
   padding-left: 58px;
   width: 156px;
@@ -66,6 +66,7 @@
 
   @media (min-width: $vp--768) {
     order: 0;
+    margin: 0;
     width: 100%;
     font-size: 20px;
     margin-bottom: 25px;
