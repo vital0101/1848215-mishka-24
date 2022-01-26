@@ -29,25 +29,25 @@
     padding-top: 0;
   }
 
-    &::after {
-      content: "";
-      position: absolute;
-      width: 47px;
-      height: 81px;
-      top: 0;
-      right: 3px;
-      background-image: url("../img/flag.svg");
-      background-repeat: no-repeat;
-      background-position: center;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 47px;
+    height: 81px;
+    top: 0;
+    right: 3px;
+    background-image: url("../img/flag.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 
-      @media (min-width: $vp--1150) {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        margin-top: 65px;
-        top: -3px;
-        right: 53px;
-      }
+    @media (min-width: $vp--1150) {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      margin-top: 65px;
+      top: -3px;
+      right: 53px;
     }
+  }
 }
 
 .contacts__title {
@@ -132,7 +132,7 @@
   border-bottom: 1px solid $color-downy;
 
   @media (min-width: $vp--768) {
-   padding-bottom: 4px;
+    padding-bottom: 4px;
   }
 
   &:hover {
