@@ -5,7 +5,12 @@
 
   @media (min-width: $vp--768) {
     padding-top: 73px;
-    padding-bottom: 83px;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: $vp--1150) {
+    padding-top: 91px;
+    padding-bottom: 59px;
   }
 
   &::before {
@@ -19,14 +24,14 @@
 
     @media (min-width: $vp--768) {
       height: 17px;
-      background-image: url("../img/zigzag-line-desktop.svg");
+      background-image: url("../img/zigzag-line-tablet.svg");
     }
 
     @media (min-width: $vp--1150) {
       margin: 0 auto;
       margin-left: 50px;
       width: calc(100% - 100px);
-      height: 17px;
+      height: 23px;
       background-image: url("../img/zigzag-line-desktop.svg");
     }
   }
@@ -45,7 +50,7 @@
   }
 
   @media (min-width: $vp--1150) {
-    margin-left: 179px;
+    margin-left: 175px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -57,23 +62,26 @@
   padding: 0;
 
   @media (min-width: $vp--768) {
-    // column-count: 2;
     display: grid;
     grid-template-columns: 2fr 2fr;
-    row-gap: 58px;
+    row-gap: 27px;
     font-size: 22px;
     line-height: 20px;
   }
 
   @media (min-width: $vp--1150) {
+    grid-template-columns: repeat(2, 350px);
     column-count: 2;
-    margin-left: 179px;
+    margin-left: 175px;
   }
+}
+
+.about-us__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .about-us__item {
   position: relative;
-  margin-bottom: 30px;
 
   @media (min-width: $vp--768) {
     margin: 0;

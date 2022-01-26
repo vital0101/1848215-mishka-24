@@ -45,6 +45,12 @@
 }
 
 .page-footer__logo-link {
+  display: none;
+
+  @media (min-width: $vp--768) {
+   display: block;
+  }
+
   &--active {
     cursor: pointer;
 
@@ -63,13 +69,8 @@
 }
 
 .page-footer__logo-icon {
-  display: none;
   width: 102px;
   height: 34px;
-
-  @media (min-width: $vp--768) {
-    display: block;
-  }
 }
 
 .page-footer__social {

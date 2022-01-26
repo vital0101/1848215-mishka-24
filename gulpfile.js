@@ -8,6 +8,7 @@ import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
+import webp from 'gulp-webp';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
@@ -62,10 +63,8 @@ const copyImages = () => {
 
 const createWebp = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
-    .pipe(squoosh({
-      webp: {}
-    }))
-    .pipe(gulp.dest('build/img'))
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest('build/img/'));
 }
 
 // SVG
@@ -89,9 +88,9 @@ const sprite = () => {
 
 const copy = (done) => {
   gulp.src([
+    'source/favicons/*',
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
-    'source/manifest.webmanifest'
   ], {
     base: 'source'
   })

@@ -6,12 +6,28 @@
     padding-top: 46px;
     padding-bottom: 57px;
   }
+
+  @media (min-width: $vp--1150) {
+    padding-top: 71px;
+    padding-bottom: 108px;
+  }
 }
 
 .contacts__wrapper {
   @media (min-width: $vp--768) {
     position: relative;
     padding-top: 22px;
+  }
+
+  @media (min-width: $vp--1150) {
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 101px 340px 527px;
+    grid-template-rows: auto auto auto;
+    column-gap: 10px;
+    width: 988px;
+    padding-top: 0;
+  }
 
     &::after {
       content: "";
@@ -19,7 +35,7 @@
       width: 47px;
       height: 81px;
       top: 0;
-      right: 53px;
+      right: 3px;
       background-image: url("../img/flag.svg");
       background-repeat: no-repeat;
       background-position: center;
@@ -28,16 +44,10 @@
         grid-column: 1/2;
         grid-row: 1/2;
         margin-top: 65px;
+        top: -3px;
+        right: 53px;
       }
     }
-  }
-
-  @media (min-width: $vp--1150) {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, auto);
-    max-width: 1150px;
-  }
 }
 
 .contacts__title {
@@ -53,10 +63,13 @@
   }
 
   @media (min-width: $vp--1150) {
-    grid-column: 2/4;
+    grid-column: 2/3;
     grid-row: 1/2;
-    margin-top: 79px;
+    margin-top: 80px;
     margin-bottom: 30px;
+    align-self: start;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 
@@ -65,13 +78,22 @@
 
   @media (min-width: $vp--768) {
     display: flex;
-    margin-bottom: 19px;
+    margin-bottom: 49px;
   }
 
   @media (min-width: $vp--1150) {
-    grid-column: 2/4;
+    grid-column: 2/3;
     grid-row: 2/3;
     flex-direction: column;
+    margin: 0;
+    margin-bottom: 101px;
+  }
+}
+
+.contacts__list:not(:last-child) {
+  margin-bottom: 30px;
+
+  @media (min-width: $vp--1150) {
     margin: 0;
   }
 }
@@ -79,7 +101,6 @@
 .contacts__list {
   display: flex;
   margin: 0;
-  margin-bottom: 30px;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
@@ -92,7 +113,6 @@
 
   @media (min-width: $vp--1150) {
     width: auto;
-    margin-bottom: 24px;
   }
 }
 
@@ -109,8 +129,11 @@
 }
 
 .contacts__link-email {
-  padding-bottom: 4px;
   border-bottom: 1px solid $color-downy;
+
+  @media (min-width: $vp--768) {
+   padding-bottom: 4px;
+  }
 
   &:hover {
     color: $color-downy;
@@ -124,7 +147,7 @@
 .contacts__map-image {
   width: calc(100% + 60px);
   margin-left: -30px;
-  margin-bottom: 38px;
+  margin-bottom: 37px;
   height: 454px;
 
   @media (min-width: $vp--768) {
@@ -134,11 +157,10 @@
   }
 
   @media (min-width: $vp--1150) {
-    grid-column: 4/-1;
+    grid-column: 3/-1;
     grid-row: 1/-1;
     margin: 0;
     width: 528px;
-    height: 547px;
   }
 }
 
@@ -162,9 +184,9 @@
   }
 
   @media (min-width: $vp--1150) {
-    grid-column: 2/4;
+    grid-column: 2/3;
     grid-row: 3/-1;
-    place-self: end start;
+    align-self: end;
     margin: 0;
   }
 }

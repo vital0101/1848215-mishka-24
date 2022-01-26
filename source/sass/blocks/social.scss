@@ -16,6 +16,10 @@
   }
 }
 
+.social__icon {
+  fill:$color-aubergine;
+}
+
 .social__link:hover .social__icon {
   fill: $color-puerto-rico-light;
 }
