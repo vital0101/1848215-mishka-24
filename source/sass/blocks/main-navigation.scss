@@ -90,13 +90,13 @@
 .main-navigation__item-top:first-child {
   @media (min-width: $vp--1150) {
     border-right: 2px solid rgba($color-black, 0.1);
-    margin-right: 30px;
+    margin-right: 34px;
   }
 }
 
 .main-navigation__link-top {
   display: block;
-  padding: 28px 0 28px 76px;
+  padding: 27px 0 27px 76px;
   font-size: 17px;
   line-height: 24px;
 
@@ -107,7 +107,7 @@
   }
 
   @media (min-width: $vp--1150) {
-    padding: 32px 30px 32px 0;
+    padding: 32px 36px 32px 0;
     font-size: 17px;
     line-height: 24px;
   }
@@ -137,8 +137,8 @@
   }
 
   @media (min-width: $vp--1150) {
-    margin-right: 27px;
-    padding: 19px 27px 19px 0;
+    margin-right: 35px;
+    padding: 20px 27px 19px 0;
     font-size: 15px;
     line-height: 24px;
   }
@@ -281,5 +281,6 @@
   @media (min-width: $vp--1150) {
     display: block;
     align-self: center;
+    margin-top: 9px;
   }
 }

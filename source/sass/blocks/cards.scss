@@ -1,24 +1,36 @@
 .cards {
   padding-top: 32px;
+  padding-bottom: 32px;
 
   @media (min-width: $vp--768) {
     padding-top: 80px;
+    padding-bottom: 51px;
   }
 
   @media (min-width: $vp--1150) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 50px;
+    padding-top: 129px;
     padding-bottom: 57px;
   }
 }
 
-.cards__item {
+.cards__item:not(:last-child) {
   margin-bottom: 30px;
 
   @media (min-width: $vp--768) {
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $vp--1150) {
+    margin-bottom: 0;
+  }
+}
+
+.cards__item {
+  @media (min-width: $vp--768) {
     min-height: 335px;
-    margin-bottom: 54px;
   }
 
   @media (min-width: $vp--1150) {

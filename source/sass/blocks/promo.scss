@@ -1,8 +1,15 @@
 .promo {
+  padding-top: 31px;
   padding-bottom: 36px;
 
   @media (min-width: $vp--768) {
+    padding-top: 52px;
     padding-bottom: 52px;
+  }
+
+  @media (min-width: $vp--1150) {
+    padding-top: 70px;
+    padding-bottom: 73px;
   }
 }
 
@@ -100,7 +107,7 @@
 }
 
 .promo__list-wrapper {
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 
   @media (min-width: $vp--768) {
     grid-column: 1/2;
@@ -119,12 +126,11 @@
   display: flex;
   margin: 0;
   margin-bottom: 7px;
-  padding-bottom: 8px;
+  padding-bottom: 9px;
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
   color: $color-charcoal;
-  // border-bottom: 1px solid $color-whispen;
   box-shadow: 0 1px 0 0 $color-whispen;
 
   @media (min-width: $vp--768) {
@@ -132,7 +138,6 @@
     padding-top: 4px;
     padding-bottom: 9px;
     line-height: 24px;
-    // outline: 1px solid red;
   }
 }
 
@@ -179,14 +184,17 @@
     grid-row: 4/5;
     font-size: 20px;
     line-height: 24px;
-    margin-bottom: 32px;
+    margin-bottom: 33px;
   }
 
   @media (min-width: $vp--1150) {
     grid-column: 2/4;
     grid-row: 4/5;
     margin: 0;
-    align-self: start;
+    align-self: end;
+    width: 250px;
+    margin-left: 21px;
+    margin-bottom: 5px;
   }
 }
 
