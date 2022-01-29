@@ -6,13 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Вязание на заказ</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="img/favicon/site.webmanifest">
-  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="icon" href="favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -69,16 +74,13 @@
       <h2 class="lead-inner__title">Вязание на заказ</h2>
     </section>
   </section>
-
   <main class="main-form">
     <section class="form-order container">
       <h2 class="visually-hidden">Форма заказа</h2>
       <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-
         <p class="form__discription">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
           заказа и мы
           свяжемся с вами, чтобы уточнить детали.</p>
-
         <div class="form__wrapper-radio">
           <h3 class="form__title form__title--radio">тип</h3>
           <ul class="form__radio-list">
@@ -96,7 +98,6 @@
             </li>
           </ul>
         </div>
-
         <div class="form__wrapper-checkbox bg-color">
           <h3 class="form__title form__title--checkbox">цвет</h3>
           <ul class="form__checkbox-list">
@@ -138,7 +139,6 @@
             </li>
           </ul>
         </div>
-
         <div class="form__wrapper-initials">
           <h3 class="form__title form__title--initials">фио</h3>
           <div class="form__initials-wrapper">
@@ -146,13 +146,11 @@
               <span class="form__label-text form__label-text--name">Имя:</span>
               <input class="form__input form__input--name" type="text" name="user-name" placeholder="Введите ваше имя*">
             </label>
-
             <label class="form__control">
               <span class="form__label-text form__label-text--surname">Фамилия:</span>
               <input class="form__input form__input--surname" type="text" name="user-surname"
                 placeholder="Укажите фамилию*">
             </label>
-
             <label class="form__control">
               <span class="form__label-text form__label-text--patronymic">Отчество:</span>
               <input class="form__input form__input--patronymic" type="text" name="user-patronymic"
@@ -160,7 +158,6 @@
             </label>
           </div>
         </div>
-
         <div class="form__wrapper-phone-email bg-color">
           <div class="form__wrapper-phone">
             <h3 class="form__title form__title--phone">тел</h3>
@@ -193,22 +190,18 @@
           </div>
 
         </div>
-
         <div class="form__wrapper-textarea">
           <h3 class="form__title form__title--textarea">доп</h3>
           <textarea class="form__textarea" name="message" cols="30" rows="10"
             placeholder="Опишите все ваши пожелания к заказу" aria-label="Текстовое поле для сообщения"></textarea>
         </div>
-
         <div class="form__legend-button-wrapper">
           <span class="form__legend">*Поля обязательны для заполнения</span>
           <button class="form__button-submit button" type="submit">отправить заказ</button>
         </div>
-
       </form>
     </section>
   </main>
-
   <footer class="page-footer">
     <div class="page-footer__wrapper container">
       <a class="page-footer__logo-link page-footer__logo-link--active" href="index.html"
@@ -219,21 +212,21 @@
       </a>
       <ul class="page-footer__social social">
         <li class="social__item">
-          <a href="#" class="social__link social__link--insta" aria-label="Мы в инстаграмме.">
+          <a class="social__link social__link--insta" href="#" aria-label="Мы в инстаграмме.">
             <svg class="social__icon" width="22" height="21">
               <use href="img/sprite.svg#insta"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__link social__link--fb" aria-label="Мы в фейсбуке.">
+          <a class="social__link social__link--fb" href="#" aria-label="Мы в фейсбуке.">
             <svg class="social__icon" width="15" height="28">
               <use href="img/sprite.svg#fb"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__link social__link--twitter" aria-label="Мы в твиттере.">
+          <a class="social__link social__link--twitter" href="#" aria-label="Мы в твиттере.">
             <svg class="social__icon" width="23" height="20">
               <use href="img/sprite.svg#twitter"></use>
             </svg>
@@ -251,9 +244,7 @@
       </div>
     </div>
   </footer>
-
   <script src="js/script.js"></script>
 </body>
-
 
 </html>

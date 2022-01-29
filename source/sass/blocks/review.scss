@@ -31,7 +31,7 @@
   @media (min-width: $vp--768) {
     padding-top: 78px;
     padding-bottom: 113px;
-    background-image: url("../img/bg/review@1x.jpg");
+    background-image: url("../img/bg/review.jpg");
     background-repeat: no-repeat;
     background-position-x: -50px;
     background-size: 400px 455px;
@@ -89,6 +89,8 @@
   display: block;
   padding-top: 14px;
   padding-bottom: 14px;
+  padding-right: 14px;
+  padding-left: 14px;
   text-align: center;
   font-size: 18px;
   line-height: 20px;

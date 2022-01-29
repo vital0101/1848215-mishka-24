@@ -6,13 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Каталог</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="img/favicon/site.webmanifest">
-  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="icon" href="favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -76,16 +81,16 @@
         <a class="card__image-link" href="#" aria-label="Подробное описание товара.">
           <picture>
             <source type="image/webp" media="(min-width: 1150px)"
-              srcset="./img/content/photo-1-desktop@1x.webp 1x, ./img/content/photo-1-desktop@2x.webp 2x">
+              srcset="./img/content/photo-1-desktop.webp 1x, ./img/content/photo-1-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
-              srcset="./img/content/photo-1-tablet@1x.webp 1x, ./img/content/photo-1-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="./img/content/photo-1-mobile@1x.webp,
+              srcset="./img/content/photo-1-tablet.webp 1x, ./img/content/photo-1-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/content/photo-1-mobile.webp,
               ./img/content/photo-1-mobile@2x.webp 2x">
             <source media="(min-width: 1150px)"
-              srcset="./img/content/photo-1-desktop@1x.jpg 1x, ./img/content/photo-1-desktop@2x.jpg 2x">
+              srcset="./img/content/photo-1-desktop.jpg 1x, ./img/content/photo-1-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
-              srcset="./img/content/photo-1-tablet@1x.jpg 1x, ./img/content/photo-1-tablet@2x.jpg 2x">
-            <img class="card__image" src="./img/content/photo-1-mobile@1x.jpg"
+              srcset="./img/content/photo-1-tablet.jpg 1x, ./img/content/photo-1-tablet@2x.jpg 2x">
+            <img class="card__image" src="./img/content/photo-1-mobile.jpg"
               srcset="./img/content/photo-1-mobile@2x.jpg 2x" alt="Вязанная игрушка в виде зайца." width="260"
               height="195">
           </picture>
@@ -105,21 +110,20 @@
           </div>
         </div>
       </article>
-
       <article class="cards__item card">
         <a class="card__image-link" href="#" aria-label="Подробное описание товара.">
           <picture>
             <source type="image/webp" media="(min-width: 1150px)"
-              srcset="./img/content/photo-2-desktop@1x.webp 1x, ./img/content/photo-2-desktop@2x.webp 2x">
+              srcset="./img/content/photo-2-desktop.webp 1x, ./img/content/photo-2-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
-              srcset="./img/content/photo-2-tablet@1x.webp 1x, ./img/content/photo-2-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="./img/content/photo-2-mobile@1x.webp,
+              srcset="./img/content/photo-2-tablet.webp 1x, ./img/content/photo-2-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/content/photo-2-mobile.webp,
             ./img/content/photo-2-mobile@2x.webp 2x">
             <source media="(min-width: 1150px)"
-              srcset="./img/content/photo-2-desktop@1x.jpg 1x, ./img/content/photo-2-desktop@2x.jpg 2x">
+              srcset="./img/content/photo-2-desktop.jpg 1x, ./img/content/photo-2-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
-              srcset="./img/content/photo-2-tablet@1x.jpg 1x, ./img/content/photo-2-tablet@2x.jpg 2x">
-            <img class="card__image" src="./img/content/photo-2-mobile@1x.jpg"
+              srcset="./img/content/photo-2-tablet.jpg 1x, ./img/content/photo-2-tablet@2x.jpg 2x">
+            <img class="card__image" src="./img/content/photo-2-mobile.jpg"
               srcset="./img/content/photo-2-mobile@2x.jpg 2x" alt="Корзинка для белья." width="260" height="195">
           </picture>
         </a>
@@ -138,21 +142,20 @@
           </div>
         </div>
       </article>
-
       <article class="cards__item card">
         <a class="card__image-link" href="#" aria-label="Подробное описание товара.">
           <picture>
             <source type="image/webp" media="(min-width: 1150px)"
-              srcset="./img/content/photo-3-desktop@1x.webp 1x, ./img/content/photo-3-desktop@2x.webp 2x">
+              srcset="./img/content/photo-3-desktop.webp 1x, ./img/content/photo-3-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
-              srcset="./img/content/photo-3-tablet@1x.webp 1x, ./img/content/photo-3-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="./img/content/photo-3-mobile@1x.webp,
+              srcset="./img/content/photo-3-tablet.webp 1x, ./img/content/photo-3-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/content/photo-3-mobile.webp,
             ./img/content/photo-3-mobile@2x.webp 2x">
             <source media="(min-width: 1150px)"
-              srcset="./img/content/photo-3-desktop@1x.jpg 1x, ./img/content/photo-3-desktop@2x.jpg 2x">
+              srcset="./img/content/photo-3-desktop.jpg 1x, ./img/content/photo-3-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
               srcset="./img/content/photo-3-tablet@1x.jpg 1x, ./img/content/photo-3-tablet@2x.jpg 2x">
-            <img class="card__image" src="./img/content/photo-3-mobile@1x.jpg"
+            <img class="card__image" src="./img/content/photo-3-mobile.jpg"
               srcset="./img/content/photo-3-mobile@2x.jpg 2x" alt="Большая корзинка для&nbsp;игрушек." width="260"
               height="195">
           </picture>
@@ -173,23 +176,22 @@
         </div>
       </article>
     </section>
-
     <section class="production-process container">
       <div class="production-process-wrapper">
         <div class="production-process__wrapper-video">
           <picture>
             <source type="image/webp" media="(min-width: 1150px)"
-              srcset="img/bg/video-desktop@1x.webp 1x, img/bg/video-desktop@2x.webp 2x">
+              srcset="img/bg/video-desktop.webp 1x, img/bg/video-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/bg/video-desktop@1x.webp 1x, img/bg/video-desktop@2x.webp 2x">
-            <source type="image/webp" srcset="img/bg/video-mobile@1x.webp,
+              srcset="img/bg/video-desktop.webp 1x, img/bg/video-desktop@2x.webp 2x">
+            <source type="image/webp" srcset="img/bg/video-mobile.webp,
               img/bg/video-mobile@2x.webp 2x">
-            <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-            <img class="production-process__image" src="img/bg/video-mobile@1x.jpg"
+            <source media="(min-width: 1150px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="production-process__image" src="img/bg/video-mobile.jpg"
               srcset="img/catalog/video-mobile@2x.jpg" alt="Вязанная корзинка на сером фоне." width="260" height="150">
           </picture>
-          <a class="production-process__video-link" aria-label="Видео производственного процесса.">
+          <a class="production-process__video-link" href="#" aria-label="Видео производственного процесса.">
             <svg class="production-process__button-image" width="101" height="77">
               <use href="img/sprite.svg#play"></use>
             </svg>
@@ -213,21 +215,21 @@
       </a>
       <ul class="page-footer__social social">
         <li class="social__item">
-          <a href="#" class="social__link social__link--insta" aria-label="Мы в инстаграмме.">
+          <a class="social__link social__link--insta" href="#" aria-label="Мы в инстаграмме.">
             <svg class="social__icon" width="22" height="21">
               <use href="img/sprite.svg#insta"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__link social__link--fb" aria-label="Мы в фейсбуке.">
+          <a class="social__link social__link--fb" href="#" aria-label="Мы в фейсбуке.">
             <svg class="social__icon" width="15" height="28">
               <use href="img/sprite.svg#fb"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__link social__link--twitter" aria-label="Мы в твиттере.">
+          <a class="social__link social__link--twitter" href="#" aria-label="Мы в твиттере.">
             <svg class="social__icon" width="23" height="20">
               <use href="img/sprite.svg#twitter"></use>
             </svg>
@@ -245,7 +247,6 @@
       </div>
     </div>
   </footer>
-
   <!-- поменять класс is-close на is-opend для открытия модального окна -->
   <div class="modal is-hidden">
     <div class="modal__wrapper">
@@ -272,7 +273,6 @@
       </section>
     </div>
   </div>
-
   <script src="js/script.js"></script>
 </body>
 
