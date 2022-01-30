@@ -20,6 +20,10 @@
   @media (min-width: $vp--1150) {
     width: auto;
   }
+
+  &:focus-visible {
+    outline: 2px solid rgba($color-black, 0.6);
+  }
 }
 
 .card__image-desktop {
@@ -66,6 +70,10 @@
 
 .card__title-link {
   align-self: flex-start;
+
+  &:focus-visible {
+    outline: 2px solid rgba($color-black, 0.6);
+  }
 }
 
 .card__title {
@@ -122,6 +130,12 @@
 
   @media (min-width: $vp--768) {
     font-size: 17px;
+  }
+}
+
+.card__cart-link {
+  &:focus-visible {
+    outline: 2px solid rgba($color-black, 0.6);
   }
 }
 

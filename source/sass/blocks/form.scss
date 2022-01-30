@@ -151,6 +151,7 @@
 .form__input-radio {
   position: absolute;
   appearance: none;
+  opacity: 0;
 }
 
 .form__label-radio {
@@ -330,6 +331,7 @@
 .form__input-checkbox {
   position: absolute;
   appearance: none;
+  opacity: 0;
 }
 
 .form__input-checkbox:checked + .form__label-checkbox::before {
@@ -698,7 +700,7 @@
     margin: 0;
     font-size: 17px;
     line-height: 30px;
-    width: 320px;
+    width: 302px;
   }
 }
 

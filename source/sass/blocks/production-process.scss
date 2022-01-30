@@ -138,6 +138,10 @@
     transform: translate(-50%, -50%) scale(0.8);
     opacity: 0.7;
   }
+
+  &:focus-visible {
+    outline: 2px solid rgba($color-black, 0.6);
+  }
 }
 
 .production-process__discription {

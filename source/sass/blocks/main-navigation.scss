@@ -207,6 +207,10 @@
   fill-opacity: 0.3;
 }
 
+.main-navigation__search:focus-visible {
+  outline: 2px solid rgba($color-black, 0.6);
+}
+
 .main-navigation__search-text {
   @media (min-width: $vp--768) {
     display: none;
@@ -258,6 +262,10 @@
 
 .main-navigation__cart:active span {
   color: rgba($color-black, 0.3);
+}
+
+.main-navigation__cart:focus-visible {
+  outline: 2px solid rgba($color-black, 0.6);
 }
 
 .main-navigation__legend {
