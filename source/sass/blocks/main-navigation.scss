@@ -5,10 +5,6 @@
   border-bottom: 1px solid $color-whispen;
   background-color: $color-white;
 
-  &--no-js {
-    display: block;
-  }
-
   &--opened {
     position: absolute;
   }
@@ -70,7 +66,7 @@
     display: flex;
     flex-wrap: wrap;
     order: 3;
-    width: 40%;
+    width: 50%;
   }
 }
 

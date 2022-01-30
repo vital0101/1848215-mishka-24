@@ -1,7 +1,6 @@
 .page-footer {
   margin-top: auto;
-  padding: 25px 0 22px;
-  min-height: 160px;
+  padding: 22px 0 22px;
   width: 100%;
   background-color: $color-white-smoke;
 
@@ -16,7 +15,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   height: 100%;
 
   &::after {
@@ -75,13 +73,17 @@
 
 .page-footer__social {
   display: flex;
-  justify-content: space-between;
-  width: 142px;
+  flex-wrap: wrap;
+  max-width: 300px;
   margin-bottom: 50px;
 }
 
 .page-footer__copyright {
-  width: 182px;
+  margin-top: 41px;
+
+  @media (min-width: $vp--768) {
+    margin-top: 0;
+  }
 }
 
 .page-footer__copyright-link {
@@ -102,7 +104,7 @@
 }
 
 .page-footer__copyright-text {
-  margin-right: 30px;
+  margin-right: 28px;
   font-size: 19px;
   line-height: 18px;
 }

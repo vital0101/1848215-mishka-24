@@ -124,6 +124,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  max-width: 500px;
 }
 
 .form__radio-item {
@@ -697,6 +698,7 @@
     margin: 0;
     font-size: 17px;
     line-height: 30px;
+    width: 320px;
   }
 }
 
@@ -712,5 +714,6 @@
   @media (min-width: $vp--768) {
     width: 230px;
     padding: 16px;
+    align-self: start;
   }
 }

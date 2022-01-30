@@ -115,7 +115,8 @@
 
 .production-process__image {
   @media (min-width: $vp--768) {
-    height: 455px;
+    min-height: 100%;
+    object-fit: cover;
   }
 }
 
