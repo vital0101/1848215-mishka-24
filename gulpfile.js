@@ -16,7 +16,7 @@ import browser from 'browser-sync';
 
 // Styles
 
-export const styles = () => {
+const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
@@ -149,9 +149,9 @@ export const build = gulp.series(
   ),
 );
 
-// Default
+// Start
 
-export default gulp.series(
+export const start = gulp.series(
   clean,
   copy,
   copyImages,
